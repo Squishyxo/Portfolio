@@ -46,6 +46,7 @@ p {
   font-size: 1.2rem;
   line-height: 1.7rem;
   margin: 2rem 0;
+  font-family: var(--font1);
 }
 .about-header {
   display: flex;

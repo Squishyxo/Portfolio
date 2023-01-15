@@ -22,5 +22,6 @@ export default {
   width: 60vw;
   margin: 10rem auto 5rem auto;
   padding: 0.5rem;
+  font-family: var(--font1);
 }
 </style>

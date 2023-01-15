@@ -133,6 +133,7 @@ export default {
     color: var(--primary-color);
     list-style: none;
     text-decoration: none;
+    font-family: var(--font3);
   }
 
   .phoneNav li:hover {

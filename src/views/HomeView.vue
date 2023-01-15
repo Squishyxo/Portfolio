@@ -51,6 +51,7 @@ export default {
   font-size: 3rem;
   line-height: 3rem;
   height: 5rem;
+  font-family: var(--font1);
 }
 .header {
   display: flex;
@@ -70,11 +71,21 @@ export default {
   a {
     color: #777;
     text-decoration: none;
+    span {
+      display: none;
+    }
     &:hover {
-      p,
+      p {
+        color: #fff;
+        transition: 0.3s all ease-in-out;
+      }
       span {
         color: #fff;
         transition: 0.3s all ease-in-out;
+        display: block;
+      }
+      .more {
+        width: 15rem;
       }
     }
   }
@@ -90,6 +101,10 @@ export default {
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
+  transition: 0.5s all ease-in-out;
+  p {
+    font-family: var(--font1);
+  }
 }
 
 .intro {

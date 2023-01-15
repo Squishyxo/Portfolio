@@ -54,6 +54,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: fixed;
   z-index: 1;
+  font-family: var(--font1);
   ul {
     display: flex;
     justify-content: space-around;
@@ -62,8 +63,7 @@ nav {
     height: 100%;
     list-style: none;
     font-size: 1.1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font2);
     li {
       overflow: hidden;
       margin: 1rem;
@@ -90,6 +90,7 @@ nav {
     color: #fff;
     a {
       color: #fff;
+      font-family: var(--font1);
     }
     &:hover {
       background-color: #42b983;

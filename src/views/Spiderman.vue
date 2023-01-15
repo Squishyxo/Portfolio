@@ -28,6 +28,7 @@ export default {
   width: 60vw;
   margin: 15rem auto 5rem auto;
   padding: 0.5rem;
+  font-family: var(--font1);
   .content {
     display: flex;
     justify-content: center;

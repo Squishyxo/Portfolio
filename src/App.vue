@@ -19,9 +19,10 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500&display=swap');
 
 :root {
-  font-family: 'Raleway', sans-serif;
   /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
   font-size: 16px;
   line-height: 24px;
@@ -30,7 +31,9 @@ export default {
   --secondary-color: #111;
   --third-color: #42b983;
   --nav-color: #222;
-
+  --font1: 'Raleway', sans-serif;
+  --font2: 'Playfair Display', serif;
+  --font3: 'Inknut Antiqua', serif;
 
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -64,7 +67,12 @@ ul {
   list-style: inside;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   min-height: 2rem;
   overflow: hidden;
 }
