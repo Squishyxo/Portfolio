@@ -1,6 +1,9 @@
 <template>
   <nav id="Navbar">
-    <h1>Mohammed</h1>
+    <div class="logo">
+      <h1>Mohammed</h1>
+      <span>&lt;/&gt;</span>
+    </div>
     <ul>
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About</router-link></li>
@@ -8,7 +11,9 @@
       <li><router-link to="/skills">Skills</router-link></li>
     </ul>
     <div class="top-right">
-      <button><router-link to="/contact">CONTACT</router-link></button>
+      <button>
+        <router-link to="/contact"><strong>CONTACT</strong></router-link>
+      </button>
       <img
         v-if="lightTheme"
         @click="changeTheme"
@@ -55,19 +60,38 @@ nav {
   position: fixed;
   z-index: 1;
   font-family: var(--font1);
+  .logo {
+    display: flex;
+    align-items: flex-end;
+    height: 40%;
+    overflow: hidden;
+    h1 {
+      margin: -0.1rem 0;
+      font-size: 2rem;
+    }
+    span {
+      font-family: var(--font3);
+      color: #42b983;
+      margin: 0 0.3rem;
+      font-size: 0.8rem;
+    }
+  }
   ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 20%;
+    width: 20%;
     height: 100%;
     list-style: none;
     font-size: 1.1rem;
-    font-family: var(--font2);
+
     li {
       overflow: hidden;
-      margin: 1rem;
       cursor: pointer;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
       &:hover {
         color: #42b983;
         transition: 0.2s all ease-in-out;
@@ -88,9 +112,12 @@ nav {
     border: 3px solid #42b983;
     background-color: var(--nav-color);
     color: #fff;
+    font-family: var(--font1);
     a {
       color: #fff;
-      font-family: var(--font1);
+      strong {
+        letter-spacing: 0.12rem;
+      }
     }
     &:hover {
       background-color: #42b983;
@@ -99,25 +126,26 @@ nav {
     }
   }
 }
-li {
+li a {
   display: inline-block;
   position: relative;
+  overflow: hidden;
 }
 
-li:after {
+li a:after {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: -0.3rem;
+  bottom: -0.1rem;
   left: 0;
   background-color: #42b983;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
-li:hover:after {
+li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }

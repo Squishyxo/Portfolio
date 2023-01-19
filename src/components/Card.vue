@@ -180,7 +180,7 @@ export default {
   background-image: url(../assets/SO.jpeg);
 }
 .card__image--frontend {
-  background-image: url(../assets/frontend.JPG);
+  background-image: url(../assets/frontend.jpg);
 }
 .card__image--spiderman {
   background-image: url(../assets/spiderman.jpg);

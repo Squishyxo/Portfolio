@@ -143,7 +143,7 @@ export default {
   width: 60vw;
   margin: 15rem auto 5rem auto;
   padding: 0.5rem;
-    font-family: var(--font1);
+  font-family: var(--font3);
   h1 {
     text-align: center;
     height: 3rem;

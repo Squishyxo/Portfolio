@@ -20,7 +20,7 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root {
   /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
@@ -33,7 +33,7 @@ export default {
   --nav-color: #222;
   --font1: 'Raleway', sans-serif;
   --font2: 'Playfair Display', serif;
-  --font3: 'Inknut Antiqua', serif;
+  --font3: 'Roboto', sans-serif;
 
   color: var(--primary-color);
   background-color: var(--secondary-color);

@@ -41,9 +41,10 @@ h1 {
   font-weight: 800;
   height: 3rem;
   overflow: hidden;
+  font-family: var(--font1);
 }
 p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.7rem;
   margin: 2rem 0;
   font-family: var(--font1);

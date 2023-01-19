@@ -63,6 +63,7 @@ export default {
   #phoneNavigation h1 {
     padding: 2rem;
     color: var(--primary-color);
+    font-family: var(--font1);
   }
   .overlay {
     width: 100vw;
@@ -128,12 +129,12 @@ export default {
     transition: all 0.5s;
     list-style: none;
     text-decoration: none;
+    font-family: var(--font1);
   }
   .phoneNav a li {
     color: var(--primary-color);
     list-style: none;
     text-decoration: none;
-    font-family: var(--font3);
   }
 
   .phoneNav li:hover {

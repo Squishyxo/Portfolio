@@ -5,7 +5,7 @@
         <h1>Hi, I'm Mohammed</h1>
         <p class="muted">@M7MD.2k</p>
         <p class="intro">
-          I like networking, monitoring, coding & a bit of designing.
+          I do networking, monitoring, coding & a bit of designing.
         </p>
         <router-link to="/about">
           <div class="more">
@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="right-header">
-        <img src="../assets/spiderman.jpg" />
+        <img src="../assets/frontend.jpg" />
       </div>
     </div>
   </div>
@@ -71,9 +71,6 @@ export default {
   a {
     color: #777;
     text-decoration: none;
-    span {
-      display: none;
-    }
     &:hover {
       p {
         color: #fff;
@@ -85,7 +82,7 @@ export default {
         display: block;
       }
       .more {
-        width: 15rem;
+        width: 14rem;
       }
     }
   }
@@ -96,7 +93,7 @@ export default {
   margin: 1rem 0;
   background-color: var(--nav-color);
   font-size: 1rem;
-  border-radius: 13px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -110,10 +107,12 @@ export default {
 .intro {
   padding: 0.5rem;
   font-size: 1.5rem;
+  font-family: var(--font1);
 }
 .muted {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
+  font-family: var(--font3);
 }
 .icons {
   width: 10rem;
