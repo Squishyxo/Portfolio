@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="right-header">
-        <img src="../assets/frontend.jpg" />
+        <img src="../assets/frontend.jpeg" />
       </div>
     </div>
   </div>
