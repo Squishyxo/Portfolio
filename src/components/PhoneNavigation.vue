@@ -11,9 +11,14 @@
     <div class="overlay"></div>
     <div class="overlay2">
       <ul class="phoneNav">
-        <router-link to="/"><li>HOME</li></router-link>
-        <router-link to="/projects"><li class="sui">PROJECTS</li></router-link>
-        <router-link to="/contact"><li>CONTACT</li></router-link>
+        <router-link to="/" @click="openNav"><li>HOME</li></router-link>
+        <router-link to="/about" @click="openNav"><li>ABOUT</li></router-link>
+        <router-link to="/projects" @click="openNav"
+          ><li class="sui">PROJECTS</li></router-link
+        >
+        <router-link to="/contact" @click="openNav"
+          ><li>CONTACT</li></router-link
+        >
       </ul>
     </div>
   </div>
@@ -33,6 +38,7 @@ export default {
       overlay2.classList.toggle('active');
       nav.classList.toggle('active');
     },
+    closeNav() {},
   },
 };
 </script>
@@ -46,12 +52,12 @@ export default {
 .phoneNav {
   display: none;
 }
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   #Navbar {
     display: none;
   }
   #phoneNavigation {
-    position: relative;
+    position: fixed;
     width: 100vw;
     height: 10vh;
     background-color: var(--secondary-color);
@@ -72,7 +78,7 @@ export default {
     position: fixed;
     bottom: 0%;
     left: 0%;
-    transform: translatex(1000px);
+    transform: translatex(1100px);
     transition: 0.5s ease-in-out;
     z-index: 3;
     display: flex;

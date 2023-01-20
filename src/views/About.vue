@@ -64,4 +64,17 @@ p {
 .oman {
   width: 4rem;
 }
+@media (max-width: 1100px) {
+  .container {
+    width: 80%;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .oman {
+    display: none;
+  }
+}
 </style>

@@ -78,9 +78,9 @@ nav {
   }
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 50%;
     height: 100%;
     list-style: none;
     font-size: 1.1rem;
@@ -130,6 +130,7 @@ li a {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  margin: 0 0.7rem;
 }
 
 li a:after {
@@ -162,5 +163,14 @@ nav ul li .router-link-active {
 .top-right > * {
   margin: 1rem;
   cursor: pointer;
+}
+@media (max-width: 1200px) {
+  .top-right {
+    button {
+      a {
+        font-size: 0.7rem;
+      }
+    }
+  }
 }
 </style>

@@ -27,8 +27,10 @@
           /></a>
         </div>
       </div>
-      <div class="right-header">
-        <img src="../assets/frontend.jpeg" />
+      <div class="centerimg">
+        <div class="right-header">
+          <img src="../assets/frontend.jpeg" />
+        </div>
       </div>
     </div>
   </div>
@@ -58,7 +60,7 @@ export default {
   justify-content: space-around;
 }
 .right-header img {
-  width: 35rem;
+  width: 35vw;
   height: 30rem;
   object-fit: cover;
   border-radius: 10px;
@@ -115,9 +117,12 @@ export default {
   font-family: var(--font3);
 }
 .icons {
-  width: 10rem;
+  width: 30%;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
+}
+.icons a {
+  margin: 0 1.2rem 0 0;
 }
 .icons a img {
   width: 1.8rem;
@@ -126,5 +131,85 @@ export default {
 .icons a img:hover {
   filter: invert(63%) sepia(62%) saturate(385%) hue-rotate(101deg)
     brightness(88%) contrast(90%);
+}
+
+@media (max-width: 1100px) {
+  .header {
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    margin: 10rem auto;
+  }
+  .centerimg {
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 60vw;
+      height: 70vh;
+    }
+  }
+  .icons {
+    width: 100%;
+    justify-content: center;
+  }
+  .more {
+    width: 8rem;
+    height: 2rem;
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    border-radius: 8px;
+  }
+  .left-header {
+    a {
+      color: #777;
+      text-decoration: none;
+      span {
+        display: none;
+      }
+    }
+  }
+  .centerimg {
+    margin: 3rem 0;
+    img {
+      width: 90vw;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin: 10rem auto auto auto;
+  }
+  .left-header h1 {
+    font-size: 2rem;
+    height: 3rem;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+  .more {
+    width: 8rem;
+    height: 2rem;
+    margin: 1rem 0;
+    font-size: 0.7rem;
+    border-radius: 8px;
+  }
+  .left-header {
+    a {
+      color: #777;
+      text-decoration: none;
+      span {
+        display: none;
+      }
+    }
+  }
+  .centerimg {
+    margin: 3rem 0;
+    img {
+      width: 90vw;
+    }
+  }
 }
 </style>
