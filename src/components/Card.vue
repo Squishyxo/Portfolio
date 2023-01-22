@@ -35,6 +35,7 @@
         </router-link>
       </li>
       <li class="cards__item">
+        <router-link to="/ccna">
         <div class="card">
           <div class="card__image card__image--record"></div>
           <div class="card__content">
@@ -46,8 +47,10 @@
             </div>
           </div>
         </div>
+        </router-link>
       </li>
       <li class="cards__item">
+        <router-link to="/ccna">
         <div class="card">
           <div class="card__image card__image--darkweb"></div>
           <div class="card__content">
@@ -59,8 +62,10 @@
             </div>
           </div>
         </div>
+        </router-link>
       </li>
       <li class="cards__item">
+        <router-link to="/ccna">
         <div class="card">
           <div class="card__image card__image--frontend"></div>
           <div class="card__content">
@@ -72,6 +77,7 @@
             </div>
           </div>
         </div>
+        </router-link>
       </li>
       <li class="cards__item">
         <router-link to="/securityonion">
@@ -108,20 +114,29 @@ export default {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
   font-family: var(--font1);
+  width: 100%;
 }
 
 .cards__item {
   display: flex;
   padding: 1rem;
-  @media (min-width: 40rem) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 1000px) {
     width: 50%;
   }
-  @media (min-width: 56rem) {
+  @media (min-width: 1300px) {
     width: 33.3333%;
+  }
+  a{
+    width: 100%;
   }
 }
 
@@ -132,7 +147,6 @@ export default {
   flex-direction: column;
   overflow: hidden;
   height: 25rem;
-  width: 100%;
   border-radius: 15px;
   cursor: pointer;
   transition: 0.5s all ease-in-out;

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <!-- <section>
       <div class="form-container">
         <form>
           <div class="user-inputs">
@@ -20,7 +20,8 @@
           <button type="submit">Send Message</button>
         </form>
       </div>
-    </section>
+    </section> -->
+    <h1>SUI</h1>
   </div>
 </template>
 

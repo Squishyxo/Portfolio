@@ -13,12 +13,9 @@
       <ul class="phoneNav">
         <router-link to="/" @click="openNav"><li>HOME</li></router-link>
         <router-link to="/about" @click="openNav"><li>ABOUT</li></router-link>
-        <router-link to="/projects" @click="openNav"
-          ><li class="sui">PROJECTS</li></router-link
-        >
-        <router-link to="/contact" @click="openNav"
-          ><li>CONTACT</li></router-link
-        >
+        <router-link to="/projects" @click="openNav"><li>PROJECTS</li></router-link>
+        <router-link to="/skills" @click="openNav"><li>SKILLS</li></router-link>
+        <router-link to="/contact" @click="openNav"><li>CONTACT</li></router-link>
       </ul>
     </div>
   </div>
@@ -59,15 +56,16 @@ export default {
   #phoneNavigation {
     position: fixed;
     width: 100vw;
-    height: 10vh;
+    height: 12vh;
     background-color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+
   }
   #phoneNavigation h1 {
-    padding: 2rem;
+    padding: 1rem 1rem;
     color: var(--primary-color);
     font-family: var(--font1);
   }
@@ -136,6 +134,7 @@ export default {
     list-style: none;
     text-decoration: none;
     font-family: var(--font1);
+    overflow: hidden;
   }
   .phoneNav a li {
     color: var(--primary-color);
@@ -152,7 +151,7 @@ export default {
   }
   .btn {
     position: absolute;
-    top: 15%;
+    top: 20%;
     right: 10%;
     z-index: 6;
     display: flex;

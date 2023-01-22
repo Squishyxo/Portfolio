@@ -67,6 +67,7 @@ p {
 @media (max-width: 1100px) {
   .container {
     width: 80%;
+    margin: 10rem auto;
   }
   p {
     font-size: 1rem;

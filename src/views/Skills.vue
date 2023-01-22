@@ -33,11 +33,11 @@
               ><a href="https://tryhackme.com/" target="_blank"
                 >TryHackMe</a
               ></strong
-            >. watch out.
+            >.
           </div>
         </li>
         <li style="--accent-color: #1b5f8c">
-          <div class="date">Monitoring & analyzing traffic</div>
+          <div class="date">Monitoring<br> & analyzing traffic</div>
           <div class="title">> Securoty Onion, OSSEC, ZEEK</div>
           <div>
             This is the future. I am using
@@ -76,7 +76,6 @@ export default {
 .container {
   width: 60vw;
   margin: 10rem auto 5rem auto;
-  padding: 0.5rem;
   font-family: var(--font1);
 }
 h1 {
@@ -118,7 +117,6 @@ ul li:not(:last-child) {
 ul li {
   grid-column: 2;
   --inlineP: 1.5rem;
-  margin-inline: var(--inlineP);
   grid-row: span 2;
   display: grid;
   grid-template-rows: min-content min-content min-content;
@@ -226,5 +224,23 @@ ul li .descr::before {
 }
 .credits a {
   color: var(--color);
+}
+@media (max-width: 1300px) {
+.container{
+  margin: 10rem auto 5rem auto;
+  width: 80vw;
+}
+ul li .date {
+  font-size: 1.2rem;
+}
+}
+@media (max-width: 1000px) {
+.container{
+  width: 90vw;
+}
+ul li .title {
+  font-size: 1.1rem;
+  padding: .8rem;
+}
 }
 </style>

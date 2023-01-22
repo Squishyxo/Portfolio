@@ -1,8 +1,8 @@
 <template>
   <nav id="Navbar">
     <div class="logo">
-      <h1>Mohammed</h1>
-      <span>&lt;/&gt;</span>
+      <router-link to="/"><h1>Mohammed</h1>
+      <span>&lt;/&gt;</span></router-link>
     </div>
     <ul>
       <li><router-link to="/">Home</router-link></li>
@@ -11,9 +11,9 @@
       <li><router-link to="/skills">Skills</router-link></li>
     </ul>
     <div class="top-right">
-      <button>
-        <router-link to="/contact"><strong>CONTACT</strong></router-link>
-      </button>
+      <router-link to="/contact"><button>
+        <strong>CONTACT</strong>
+      </button></router-link>
       <img
         v-if="lightTheme"
         @click="changeTheme"
@@ -50,7 +50,8 @@ export default {
 nav {
   width: 100vw;
   height: 10vh;
-  background-color: var(--nav-color);
+  background-color: #111;
+  border-bottom: 3px solid #fff;
   padding: 0 3rem;
   color: #777;
   display: flex;
@@ -61,11 +62,12 @@ nav {
   z-index: 1;
   font-family: var(--font1);
   .logo {
-    display: flex;
+a{
+      display: flex;
     align-items: flex-end;
     height: 40%;
-    overflow: hidden;
-    h1 {
+  overflow: hidden;
+  h1 {
       margin: -0.1rem 0;
       font-size: 2rem;
     }
@@ -75,6 +77,7 @@ nav {
       margin: 0 0.3rem;
       font-size: 0.8rem;
     }
+}
   }
   ul {
     display: flex;
@@ -93,7 +96,7 @@ nav {
       align-items: center;
 
       &:hover {
-        color: #42b983;
+        color: #fff;
         transition: 0.2s all ease-in-out;
       }
     }
@@ -110,7 +113,7 @@ nav {
     outline: inherit;
     border: none;
     border: 3px solid #42b983;
-    background-color: var(--nav-color);
+    background-color: #111;
     color: #fff;
     font-family: var(--font1);
     a {
@@ -138,10 +141,10 @@ li a:after {
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
+  height: 3px;
   bottom: -0.1rem;
   left: 0;
-  background-color: #42b983;
+  background-color: #fff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -151,7 +154,7 @@ li a:hover:after {
   transform-origin: bottom left;
 }
 nav ul li .router-link-active {
-  color: #42b983;
+  color: #fff;
 }
 .lightmode {
   width: 2rem;
