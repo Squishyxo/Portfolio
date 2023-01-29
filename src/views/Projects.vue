@@ -20,7 +20,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  h1{
+  h1 {
     text-align: center;
     margin-bottom: 3rem;
   }
@@ -30,13 +30,13 @@ export default {
   font-family: var(--font1);
 }
 @media (max-width: 1300px) {
-.container{
-  width: 80vw;
-}
+  .container {
+    width: 80vw;
+  }
 }
 @media (max-width: 1000px) {
-.container{
-  width: 90vw;
-}
+  .container {
+    width: 90vw;
+  }
 }
 </style>

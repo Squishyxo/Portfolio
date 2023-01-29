@@ -16,7 +16,7 @@ export default createStore({
       document.documentElement.style.setProperty('--nav-color', '#222');
         } else {
       document.documentElement.style.setProperty('--primary-color', '#1a1a1a');
-      document.documentElement.style.setProperty('--secondary-color', '#fff');
+      document.documentElement.style.setProperty('--secondary-color', '#E9EDDE');
       document.documentElement.style.setProperty('--third-color', '#0f0f0f');
       document.documentElement.style.setProperty('--nav-color', '#1a1a1a');
             }

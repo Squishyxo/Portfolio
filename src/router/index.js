@@ -7,6 +7,7 @@ import Skills from '../views/Skills.vue'
 import Securityonion from '../views/Securityonion.vue'
 import Ccna from '../views/Ccna.vue'
 import Spiderman from '../views/Spiderman.vue'
+import Wazuh from '../views/Wazuh.vue'
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     path: '/spiderman',
     name: 'spiderman',
     component: Spiderman
+  },
+    {
+    path: '/wazuh',
+    name: 'wazuh',
+    component: Wazuh
   },
 ]
 

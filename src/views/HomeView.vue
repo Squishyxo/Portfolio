@@ -112,9 +112,9 @@ export default {
   font-family: var(--font1);
 }
 .muted {
-  color: rgba(255, 255, 255, 0.7);
   font-size: 1rem;
   font-family: var(--font3);
+  opacity: 50%;
 }
 .icons {
   width: 30%;

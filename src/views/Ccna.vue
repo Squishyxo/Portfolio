@@ -30,31 +30,43 @@
         This design is outdated and not used nowadays.
         </p>
         <h5>Ring Topology</h5>
-        <p>Ring topology is creating a circle with the devices that are connected with each other.<br>Advantages:
+        <p>Ring topology is creating a circle with the devices that are connected with each other.<br><br><br>
+        <span>
+        <strong>Advantages:</strong>
         <ul>
             <li>Network Management: devices can be replaced/removed from the network without shutting it down.</li>
             <li>Cost: Twisted pair cabling is inexpensive and easily available. Therefore, the installation cost is very low.</li>
             <li>Reliable: It is a more reliable network because the communication system is not dependent on the single host computer</li>
         </ul>
+        </span>
         <br>
-        Disadvantages:
+        <span>
+        <strong>Disadvantages:</strong>
         <ul>
             <li>Difficult troubleshooting.</li>
             <li>Delay</li>
         </ul>
+        </span>
         </p>
         <h5>Star Topology</h5>
-        <p>This design is the most used design these days. The shared device is in the middle, and a cable is going out from it to each device.<br> Advantages:<br>
+        <p>This design is the most used design these days. The shared device is in the middle, and a cable is going out from it to each device.<br><br>  
+        <span>
+        <strong>Advantages:</strong>
+        <br>
         <ul>
             <li>Efficient troubleshooting: troubleshooting is easier than the other designs.</li>
             <li>Easily expandable: more devices can be easily connected to the centered device using its own cable.</li>
         </ul>
+        </span>
         <br>
-        Disadvantages:<br>
+        <span>
+          <strong>Disadvantages:</strong>
+        <br>
         <ul>
             <li>A Central point of failure.</li>
             <li>So many cables.</li>
         </ul>
+        </span>
         </p>
         <h4>> OSI Model</h4>
         <p>The Open Systems Interconnection (OSI) is the model that is being used by the modern devices to communicate to other devices on the internet.<br>The OSI model consists of 7 layers that share the steps of encapsulation/decapsulation.<br><img width="70%" src="../assets/ccna2.jpg" />
@@ -143,7 +155,7 @@ export default {
   width: 70vw;
   margin: 15rem auto 5rem auto;
   padding: 0.5rem;
-  font-family: var(--font3);
+  font-family: var(--font2);
 
   h1 {
     text-align: center;
@@ -192,26 +204,26 @@ export default {
 }
 @media (max-width: 1000px) {
 .container{
-  width: 90vw;
+  width: 95vw;
   h1{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     letter-spacing: 0.1rem;
   }
 .content {
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
     h3 {
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
     h4 {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
     h5 {
-      font-size: .9rem;
+      font-size: 1.2rem;
     }
     p {
-      font-size: .8rem;
+      font-size: 1.1rem;
     }
   }
 }

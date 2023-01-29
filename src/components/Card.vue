@@ -36,47 +36,98 @@
       </li>
       <li class="cards__item">
         <router-link to="/ccna">
-        <div class="card">
-          <div class="card__image card__image--record"></div>
-          <div class="card__content">
-            <div class="card__title">Docker</div>
-            <p class="card__text">huh</p>
-            <div class="learn">
-              <span>Read more</span>
-              <span>></span>
+          <div class="card">
+            <div class="card__image card__image--record"></div>
+            <div class="card__content">
+              <div class="card__title">Docker</div>
+              <p class="card__text">huh</p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
             </div>
           </div>
-        </div>
         </router-link>
       </li>
       <li class="cards__item">
         <router-link to="/ccna">
-        <div class="card">
-          <div class="card__image card__image--darkweb"></div>
-          <div class="card__content">
-            <div class="card__title">Dark Web</div>
-            <p class="card__text">I managed to reach the dark web.</p>
-            <div class="learn">
-              <span>Read more</span>
-              <span>></span>
+          <div class="card">
+            <div class="card__image card__image--darkweb"></div>
+            <div class="card__content">
+              <div class="card__title">Dark Web</div>
+              <p class="card__text">I managed to reach the dark web.</p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
             </div>
           </div>
-        </div>
         </router-link>
       </li>
       <li class="cards__item">
         <router-link to="/ccna">
-        <div class="card">
-          <div class="card__image card__image--frontend"></div>
-          <div class="card__content">
-            <div class="card__title">Frontend</div>
-            <p class="card__text">I did something</p>
-            <div class="learn">
-              <span>Read more</span>
-              <span>></span>
+          <div class="card">
+            <div class="card__image card__image--frontend"></div>
+            <div class="card__content">
+              <div class="card__title">Frontend</div>
+              <p class="card__text">I did something</p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
             </div>
           </div>
-        </div>
+        </router-link>
+      </li>
+      <li class="cards__item">
+        <router-link to="/securityonion">
+          <div class="card">
+            <div class="card__image card__image--so"></div>
+            <div class="card__content">
+              <div class="card__title">Security Onion</div>
+              <p class="card__text">
+                I am using Security Onion to monitor traffic on my networks.
+              </p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
+            </div>
+          </div>
+        </router-link>
+      </li>
+      <li class="cards__item">
+        <router-link to="/wazuh">
+          <div class="card">
+            <div class="card__image card__image--so"></div>
+            <div class="card__content">
+              <div class="card__title">Wazuh</div>
+              <p class="card__text">
+                I implemented wazuh to minitor this website.
+              </p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
+            </div>
+          </div>
+        </router-link>
+      </li>
+      <li class="cards__item">
+        <router-link to="/securityonion">
+          <div class="card">
+            <div class="card__image card__image--so"></div>
+            <div class="card__content">
+              <div class="card__title">Security Onion</div>
+              <p class="card__text">
+                I am using Security Onion to monitor traffic on my networks.
+              </p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
+            </div>
+          </div>
         </router-link>
       </li>
       <li class="cards__item">
@@ -135,7 +186,7 @@ export default {
   @media (min-width: 1300px) {
     width: 33.3333%;
   }
-  a{
+  a {
     width: 100%;
   }
 }

@@ -21,6 +21,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
 
 :root {
   /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
@@ -32,7 +33,7 @@ export default {
   --third-color: #42b983;
   --nav-color: #222;
   --font1: 'Raleway', sans-serif;
-  --font2: 'Playfair Display', serif;
+  --font2: 'Inter', sans-serif;
   --font3: 'Roboto', sans-serif;
 
   color: var(--primary-color);

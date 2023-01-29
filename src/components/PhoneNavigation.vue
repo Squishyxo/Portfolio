@@ -11,11 +11,22 @@
     <div class="overlay"></div>
     <div class="overlay2">
       <ul class="phoneNav">
-        <router-link to="/" @click="openNav"><li>HOME</li></router-link>
-        <router-link to="/about" @click="openNav"><li>ABOUT</li></router-link>
-        <router-link to="/projects" @click="openNav"><li>PROJECTS</li></router-link>
-        <router-link to="/skills" @click="openNav"><li>SKILLS</li></router-link>
-        <router-link to="/contact" @click="openNav"><li>CONTACT</li></router-link>
+        <router-link to="/" @click="openNav">
+          <li><strong>HOME</strong></li>
+        </router-link>
+        <router-link to="/about" @click="openNav">
+          <li><strong>ABOUT</strong></li>
+        </router-link>
+        <router-link to="/projects" @click="openNav"
+          ><li><strong>PROJECTS</strong></li>
+        </router-link>
+        <router-link to="/skills" @click="openNav"
+          ><li><strong>SKILLS</strong></li>
+        </router-link>
+        <router-link to="/contact" @click="openNav"
+          ><li><strong>CONTACT</strong></li>
+        </router-link>
+        <li @click="changeTheme"><strong>CHANGE THEME</strong></li>
       </ul>
     </div>
   </div>
@@ -36,6 +47,9 @@ export default {
       nav.classList.toggle('active');
     },
     closeNav() {},
+    changeTheme() {
+      this.$store.commit('changeTheme');
+    },
   },
 };
 </script>
@@ -62,7 +76,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     z-index: 10;
-
   }
   #phoneNavigation h1 {
     padding: 1rem 1rem;
@@ -77,7 +90,7 @@ export default {
     bottom: 0%;
     left: 0%;
     transform: translatex(1100px);
-    transition: 0.5s ease-in-out;
+    transition: 0.5s transform ease-in-out;
     z-index: 3;
     display: flex;
     align-items: center;
@@ -96,7 +109,7 @@ export default {
     bottom: 1.3%;
     left: 2.8%;
     transform: translatex(1000px);
-    transition: 1.5s ease-in-out;
+    transition: 1.5s transform ease-in-out;
     z-index: 4;
     display: flex;
     align-items: center;
@@ -114,12 +127,10 @@ export default {
     background-color: #fff;
   }
   .phoneNav {
-    position: fixed;
     font-size: 1.8rem;
     list-style: none;
     color: var(--primary-color);
     opacity: 0;
-    transition: 2s ease-in-out;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -130,7 +141,6 @@ export default {
   .phoneNav li {
     margin: 20px;
     cursor: pointer;
-    transition: all 0.5s;
     list-style: none;
     text-decoration: none;
     font-family: var(--font1);
@@ -140,10 +150,6 @@ export default {
     color: var(--primary-color);
     list-style: none;
     text-decoration: none;
-  }
-
-  .phoneNav li:hover {
-    transform: scale(1.2);
   }
 
   .phoneNav.active {
