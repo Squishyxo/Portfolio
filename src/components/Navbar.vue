@@ -1,8 +1,10 @@
 <template>
   <nav id="Navbar">
     <div class="logo">
-      <router-link to="/"><h1>Mohammed</h1>
-      <span>&lt;/&gt;</span></router-link>
+      <router-link to="/"
+        ><h1>Mohammed</h1>
+        <span>&lt;/&gt;</span></router-link
+      >
     </div>
     <ul>
       <li><router-link to="/">Home</router-link></li>
@@ -11,9 +13,25 @@
       <li><router-link to="/skills">Skills</router-link></li>
     </ul>
     <div class="top-right">
-      <router-link to="/contact"><button>
-        <strong>CONTACT</strong>
-      </button></router-link>
+      <router-link to="/contact">
+        <button class="cssbuttons-io-button">
+          Contact Me
+          <div class="icon">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </router-link>
       <img
         v-if="lightTheme"
         @click="changeTheme"
@@ -62,22 +80,22 @@ nav {
   z-index: 1;
   font-family: var(--font1);
   .logo {
-a{
+    a {
       display: flex;
-    align-items: flex-end;
-    height: 40%;
-  overflow: hidden;
-  h1 {
-      margin: -0.1rem 0;
-      font-size: 2rem;
+      align-items: flex-end;
+      height: 40%;
+      overflow: hidden;
+      h1 {
+        margin: -0.1rem 0;
+        font-size: 2rem;
+      }
+      span {
+        font-family: var(--font3);
+        color: #42b983;
+        margin: 0 0.3rem;
+        font-size: 0.8rem;
+      }
     }
-    span {
-      font-family: var(--font3);
-      color: #42b983;
-      margin: 0 0.3rem;
-      font-size: 0.8rem;
-    }
-}
   }
   ul {
     display: flex;
@@ -104,29 +122,6 @@ a{
   h1 {
     overflow: hidden;
     color: #fff;
-  }
-  button {
-    width: 7vw;
-    height: 5vh;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    outline: inherit;
-    border: none;
-    border: 3px solid #42b983;
-    background-color: #111;
-    color: #fff;
-    font-family: var(--font1);
-    a {
-      color: #fff;
-      strong {
-        letter-spacing: 0.12rem;
-      }
-    }
-    &:hover {
-      background-color: #42b983;
-      color: var(--secondary-color);
-      transition: 0.2s all ease-in-out;
-    }
   }
 }
 li a {
@@ -175,5 +170,57 @@ nav ul li .router-link-active {
       }
     }
   }
+}
+.cssbuttons-io-button {
+  background: var(--nav-color);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--nav-color);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
 }
 </style>
