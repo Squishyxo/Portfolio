@@ -17,18 +17,7 @@
         <button class="cssbuttons-io-button">
           Contact Me
           <div class="icon">
-            <svg
-              height="24"
-              width="24"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                fill="currentColor"
-              ></path>
-            </svg>
+            <img class="envelope" src="../assets/envelope.svg" />
           </div>
         </button>
       </router-link>
@@ -91,7 +80,7 @@ nav {
       }
       span {
         font-family: var(--font3);
-        color: #42b983;
+        color: #fff;
         margin: 0 0.3rem;
         font-size: 0.8rem;
       }
@@ -172,7 +161,7 @@ nav ul li .router-link-active {
   }
 }
 .cssbuttons-io-button {
-  background: var(--nav-color);
+  background: #111;
   color: white;
   font-family: inherit;
   padding: 0.35em;
@@ -222,5 +211,8 @@ nav ul li .router-link-active {
 
 .cssbuttons-io-button:active .icon {
   transform: scale(0.95);
+}
+.envelope {
+  width: 1.3rem;
 }
 </style>

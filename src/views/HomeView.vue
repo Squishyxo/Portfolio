@@ -12,12 +12,14 @@
             <p>More about me</p>
             <span>></span>
           </div> -->
-          <button class="learn-more">
-            <span class="circle" aria-hidden="true">
-              <span class="icon arrow"></span>
-            </span>
-            <span class="button-text">Learn More</span>
-          </button>
+          <div>
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">More about me</span>
+            </button>
+          </div>
         </router-link>
         <div class="icons">
           <a
@@ -51,6 +53,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+* {
+  overflow-x: visible !important;
+}
 .container {
   width: 80%;
   margin: 15rem auto 5rem auto;
@@ -75,26 +80,7 @@ export default {
   padding: 0.5rem;
   font-size: 1.5rem;
 }
-.left-header {
-  a {
-    color: #777;
-    text-decoration: none;
-    &:hover {
-      p {
-        color: #fff;
-        transition: 0.3s all ease-in-out;
-      }
-      span {
-        color: #fff;
-        transition: 0.3s all ease-in-out;
-        display: block;
-      }
-      .more {
-        width: 14rem;
-      }
-    }
-  }
-}
+
 .more {
   width: 13rem;
   height: 3rem;
@@ -115,7 +101,7 @@ export default {
 .intro {
   padding: 0.5rem;
   font-size: 1.5rem;
-  font-family: var(--font1);
+  font-family: var(--font2);
 }
 .muted {
   font-size: 1rem;
@@ -228,13 +214,13 @@ button {
   text-decoration: none;
   background: transparent;
   padding: 0;
-  font-size: 1rem;
+  font-size: inherit;
+  font-family: inherit;
   font-family: var(--font1);
-  margin: 2rem 0;
 }
 
 button.learn-more {
-  width: 15rem;
+  width: 19rem;
   height: auto;
 }
 
@@ -273,8 +259,8 @@ button.learn-more .circle .icon.arrow::before {
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid var(--primary-color);
-  border-right: 0.125rem solid var(--primary-color);
+  border-top: 0.125rem solid var(--secondary-color);
+  border-right: 0.125rem solid var(--secondary-color);
   transform: rotate(45deg);
 }
 
@@ -289,9 +275,8 @@ button.learn-more .button-text {
   margin: 0 0 0 1.85rem;
   color: var(--primary-color);
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 1;
   text-align: center;
-  text-transform: uppercase;
   opacity: 80%;
 }
 
