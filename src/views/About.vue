@@ -13,7 +13,7 @@
         Bachelor of Cyber Security degree at Fontys in The Netherlands. I have
         always been fascinated by technology and how it can be used to solve
         problems and make our lives easier. I am excited to learn more about
-        computer science and how it can be applied in the real world. In my free
+        programming and how it can be applied in the real world. In my free
         time, I enjoy staying up to date with the latest trends in technology
         and programming languages.
       </p>

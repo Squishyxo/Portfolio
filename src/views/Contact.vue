@@ -161,6 +161,7 @@ export default {
   font-size: 1.3rem;
   width: 100%;
   font-family: var(--font2);
+  overflow: hidden;
 }
 .app-title span {
   padding: 0.5rem;

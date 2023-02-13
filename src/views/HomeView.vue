@@ -5,13 +5,9 @@
         <h1>Hi, I'm Mohammed</h1>
         <p class="muted">@M7MD.2k</p>
         <p class="intro">
-          I do networking, monitoring, coding & a bit of designing.
+          I do networking, monitoring, programming & a bit of designing.
         </p>
         <router-link to="/about">
-          <!-- <div class="more">
-            <p>More about me</p>
-            <span>></span>
-          </div> -->
           <div>
             <button class="learn-more">
               <span class="circle" aria-hidden="true">
@@ -19,20 +15,23 @@
               </span>
               <span class="button-text">More about me</span>
             </button>
+            <button class="small">
+             More about me >
+            </button>
           </div>
         </router-link>
         <div class="icons">
           <a
             href="https://www.linkedin.com/in/mohammed-alshukaili-578a64222/"
-            target="_blank"
-            ><img src="../assets/linkedin.svg"
+            target="_blank">
+            <img src="../assets/linkedin.svg"/>
+            </a>
+          <a href="https://github.com/Squishyxo" target="_blank">
+          <img src="../assets/github.svg"
           /></a>
-          <a href="https://github.com/Squishyxo" target="_blank"
-            ><img src="../assets/github.svg"
-          /></a>
-          <a href="https://www.instagram.com/m7md.2k/" target="_blank"
-            ><img src="../assets/instagram.svg"
-          /></a>
+          <a href="https://www.instagram.com/m7md.2k/" target="_blank">
+          <img src="../assets/instagram.svg"/>
+          </a>
         </div>
       </div>
       <div class="centerimg">
@@ -79,6 +78,9 @@ export default {
 .left-header > * {
   padding: 0.5rem;
   font-size: 1.5rem;
+}
+.small{
+  display: none;
 }
 
 .more {
@@ -130,7 +132,7 @@ export default {
     flex-direction: column;
   }
   .container {
-    width: 90%;
+    width: 95%;
     margin: 10rem auto;
   }
   .centerimg {
@@ -169,10 +171,27 @@ export default {
       width: 90vw;
     }
   }
+  .learn-more{
+    display: none;
+  }
+  .small{
+    display: block;
+    color: var(--primary-color);
+    padding: .7rem;
+    text-align: start;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    opacity: 95%;
+    font-family: var(--font2);
+  }
+  .icons a img:hover {
+  filter: none
+}
 }
 @media (max-width: 600px) {
   .container {
-    margin: 10rem auto auto auto;
+    margin: 7rem auto auto auto;
   }
   .left-header h1 {
     font-size: 2rem;

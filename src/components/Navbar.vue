@@ -118,6 +118,8 @@ li a {
   position: relative;
   overflow: hidden;
   margin: 0 0.7rem;
+  padding: 1rem;
+  transition: .2s transform ease-in-out;
 }
 
 li a:after {
@@ -126,16 +128,19 @@ li a:after {
   width: 100%;
   transform: scaleX(0);
   height: 3px;
-  bottom: -0.1rem;
+  bottom: .3rem;
   left: 0;
   background-color: #fff;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+  opacity: 80%;
+  border-radius: 40px;
 }
 
 li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+
 }
 nav ul li .router-link-active {
   color: #fff;
