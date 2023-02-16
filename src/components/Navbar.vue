@@ -10,7 +10,7 @@
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/about">About</router-link></li>
       <li><router-link to="/projects">Projects</router-link></li>
-      <li><router-link to="/skills">Skills</router-link></li>
+      <li><router-link to="/skills2">Skills</router-link></li>
     </ul>
     <div class="top-right">
       <router-link to="/contact">
@@ -119,7 +119,7 @@ li a {
   overflow: hidden;
   margin: 0 0.7rem;
   padding: 1rem;
-  transition: .2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
 }
 
 li a:after {
@@ -128,7 +128,7 @@ li a:after {
   width: 100%;
   transform: scaleX(0);
   height: 3px;
-  bottom: .3rem;
+  bottom: 0.3rem;
   left: 0;
   background-color: #fff;
   transform-origin: bottom right;
@@ -140,7 +140,6 @@ li a:after {
 li a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-
 }
 nav ul li .router-link-active {
   color: #fff;

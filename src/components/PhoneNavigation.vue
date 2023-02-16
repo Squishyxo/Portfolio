@@ -20,7 +20,7 @@
         <router-link to="/projects" @click="openNav"
           ><li><strong>PROJECTS</strong></li>
         </router-link>
-        <router-link to="/skills" @click="openNav"
+        <router-link to="/skills2" @click="openNav"
           ><li><strong>SKILLS</strong></li>
         </router-link>
         <router-link to="/contact" @click="openNav"

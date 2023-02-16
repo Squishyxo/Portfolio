@@ -37,10 +37,13 @@
           </div>
         </li>
         <li style="--accent-color: #1b5f8c">
-          <div class="date">Monitoring<br> & analyzing traffic</div>
+          <div class="date">
+            Monitoring<br />
+            & analyzing traffic
+          </div>
           <div class="title">> Securoty Onion, OSSEC, ZEEK</div>
           <div>
-            This is the future. I am using
+            I am using
             <strong
               ><a href="https://securityonionsolutions.com/" target="_blank"
                 >SecurityOnion</a
@@ -226,21 +229,21 @@ ul li .descr::before {
   color: var(--color);
 }
 @media (max-width: 1300px) {
-.container{
-  margin: 10rem auto 5rem auto;
-  width: 80vw;
-}
-ul li .date {
-  font-size: 1.2rem;
-}
+  .container {
+    margin: 10rem auto 5rem auto;
+    width: 80vw;
+  }
+  ul li .date {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 1000px) {
-.container{
-  width: 90vw;
-}
-ul li .title {
-  font-size: 1.1rem;
-  padding: .8rem;
-}
+  .container {
+    width: 90vw;
+  }
+  ul li .title {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+  }
 }
 </style>

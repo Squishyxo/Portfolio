@@ -4,6 +4,7 @@ import Projects from '../views/Projects.vue'
 import Contact from '../views/Contact.vue'
 import About from '../views/About.vue'
 import Skills from '../views/Skills.vue'
+import Skills2 from '../views/Skills2.vue'
 import Securityonion from '../views/Securityonion.vue'
 import Ccna from '../views/Ccna.vue'
 import Spiderman from '../views/Spiderman.vue'
@@ -34,6 +35,11 @@ const routes = [
     path: '/skills',
     name: 'skills',
     component: Skills
+  },
+    {
+    path: '/skills2',
+    name: 'skills2',
+    component: Skills2
   },
     {
     path: '/securityonion',
