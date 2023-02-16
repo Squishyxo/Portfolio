@@ -169,7 +169,7 @@ section {
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  box-shadow: var(--primary-color) 0px 1px 15px;
+  box-shadow: var(--nav-color) 0px 1px 15px;
   padding: 1rem;
 }
 section div {
