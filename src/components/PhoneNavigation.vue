@@ -143,7 +143,7 @@ export default {
     cursor: pointer;
     list-style: none;
     text-decoration: none;
-    font-family: var(--font1);
+    font-family: var(--font2);
     overflow: hidden;
   }
   .phoneNav a li {

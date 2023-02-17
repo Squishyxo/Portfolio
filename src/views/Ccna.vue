@@ -3,7 +3,7 @@
     <div class="container">
       <h1>Cisco Certified Network Associate CCNA</h1>
       <div class="content">
-        <h2>> What is CCNA?</h2>
+        <h2>What is CCNA?</h2>
         <p>
           Cisco Certified Network Associate is a networking cetificate by Cisco.
           <a

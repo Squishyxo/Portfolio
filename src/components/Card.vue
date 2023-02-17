@@ -169,7 +169,7 @@ export default {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: var(--font1);
+  font-family: var(--font2);
   width: 100%;
 }
 
@@ -200,7 +200,7 @@ export default {
   height: 25rem;
   border-radius: 15px;
   cursor: pointer;
-  transition: 0.5s all ease-in-out;
+  transition: 0.3s all ease-in-out;
   &:hover {
     .card__image {
       filter: contrast(100%);
@@ -215,7 +215,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   padding: 0.5rem 1rem;
-  background-color: var(--nav-color);
+  background-color: var(--cards-color);
 }
 
 .card__image {
@@ -263,7 +263,7 @@ export default {
 }
 
 .card__title {
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 1.25rem;
   font-weight: 600;
   letter-spacing: 2px;
@@ -276,13 +276,13 @@ export default {
 }
 p,
 span {
-  color: #fff;
+  color: var(--secondary-color);
 }
 .learn {
   width: 100%;
   span {
     margin: 0 0.5rem;
-    transition: 0.7s margin ease-in-out;
+    transition: 0.5s margin ease-in-out;
   }
 }
 .card:hover {

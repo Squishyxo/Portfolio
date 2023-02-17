@@ -15,22 +15,21 @@
               </span>
               <span class="button-text">More about me</span>
             </button>
-            <button class="small">
-             More about me >
-            </button>
+            <button class="small">More about me ></button>
           </div>
         </router-link>
         <div class="icons">
           <a
             href="https://www.linkedin.com/in/mohammed-alshukaili-578a64222/"
-            target="_blank">
-            <img src="../assets/linkedin.svg"/>
-            </a>
+            target="_blank"
+          >
+            <img src="../assets/linkedin.svg" />
+          </a>
           <a href="https://github.com/Squishyxo" target="_blank">
-          <img src="../assets/github.svg"
+            <img src="../assets/github.svg"
           /></a>
           <a href="https://www.instagram.com/m7md.2k/" target="_blank">
-          <img src="../assets/instagram.svg"/>
+            <img src="../assets/instagram.svg" />
           </a>
         </div>
       </div>
@@ -79,7 +78,7 @@ export default {
   padding: 0.5rem;
   font-size: 1.5rem;
 }
-.small{
+.small {
   display: none;
 }
 
@@ -171,13 +170,13 @@ export default {
       width: 90vw;
     }
   }
-  .learn-more{
+  .learn-more {
     display: none;
   }
-  .small{
+  .small {
     display: block;
     color: var(--primary-color);
-    padding: .7rem;
+    padding: 0.7rem;
     text-align: start;
     border-radius: 4px;
     font-size: 1.2rem;
@@ -186,8 +185,8 @@ export default {
     font-family: var(--font2);
   }
   .icons a img:hover {
-  filter: none
-}
+    filter: none;
+  }
 }
 @media (max-width: 600px) {
   .container {

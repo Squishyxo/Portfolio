@@ -63,7 +63,7 @@ export default {
   margin: auto;
   padding: 10px;
   width: 70vw;
-  font-family: var(--font1);
+  font-family: var(--font2);
 }
 
 .screen {

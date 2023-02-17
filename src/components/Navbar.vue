@@ -67,7 +67,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: fixed;
   z-index: 1;
-  font-family: var(--font1);
+  font-family: var(--font2);
   .logo {
     a {
       display: flex;

@@ -79,7 +79,7 @@ export default {
 .container {
   width: 60vw;
   margin: 10rem auto 5rem auto;
-  font-family: var(--font1);
+  font-family: var(--font2);
 }
 h1 {
   text-align: center;
