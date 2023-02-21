@@ -19,7 +19,7 @@
           <div>
             <img src="../assets/cybersecurity.svg" />
             <h2>Cyber Security</h2>
-            <p>Securing systems from outsiders.</p>
+            <p>Securing infrastructure from attackers.</p>
           </div>
           <span class="line"></span>
           <div>
@@ -128,6 +128,24 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star empty"></span>
           </div>
+          <div>
+            <img src="../assets/sql.svg" />
+            <h2>SQL</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star empty"></span>
+          </div>
+          <div>
+            <img src="../assets/firebase.svg" />
+            <h2>Firebase</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+          </div>
         </section>
       </div>
     </div>
@@ -169,13 +187,13 @@ section {
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  box-shadow: var(--nav-color) 0px 1px 15px;
+  box-shadow: #222 0px 1px 15px;
   padding: 1rem;
 }
 section div {
   width: 20%;
   text-align: center;
-  margin: 1rem 0;
+  margin: 0.2rem 0;
 }
 section div > * {
   padding: 0.6rem 0;
@@ -188,13 +206,13 @@ img {
   width: 7rem;
 }
 .softwares section div {
-  width: 14%;
+  width: auto;
   img {
     width: 3rem;
   }
 }
 .white-svg {
-  background-color: var(--nav-color);
+  background-color: #222;
   img {
     filter: invert(100%) sepia(21%) saturate(0%) hue-rotate(304deg)
       brightness(104%) contrast(104%);
@@ -208,11 +226,6 @@ img {
 }
 .line {
   display: none;
-}
-@media (min-width: 1600px) {
-  .softwares section div {
-    width: 7%;
-  }
 }
 @media (max-width: 787px) {
   section {

@@ -203,12 +203,6 @@ nav ul li .router-link-active {
   width: calc(100% - 0.6em);
 }
 
-.cssbuttons-io-button .icon svg {
-  width: 1.1em;
-  transition: transform 0.3s;
-  color: var(--nav-color);
-}
-
 .cssbuttons-io-button:hover .icon svg {
   transform: translateX(0.1em);
 }

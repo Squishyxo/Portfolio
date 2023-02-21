@@ -82,23 +82,6 @@ export default {
   display: none;
 }
 
-.more {
-  width: 13rem;
-  height: 3rem;
-  margin: 1rem 0;
-  background-color: var(--nav-color);
-  font-size: 1rem;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  transition: 0.5s all ease-in-out;
-  p {
-    font-family: var(--font1);
-  }
-}
-
 .intro {
   padding: 0.5rem;
   font-size: 1.5rem;
@@ -148,13 +131,6 @@ export default {
     width: 100%;
     justify-content: center;
   }
-  .more {
-    width: 8rem;
-    height: 2rem;
-    margin: 1rem 0;
-    font-size: 0.7rem;
-    border-radius: 8px;
-  }
   .left-header {
     a {
       color: #777;
@@ -198,13 +174,6 @@ export default {
   }
   .intro {
     font-size: 1.1rem;
-  }
-  .more {
-    width: 8rem;
-    height: 2rem;
-    margin: 1rem 0;
-    font-size: 0.7rem;
-    border-radius: 8px;
   }
   .left-header {
     a {

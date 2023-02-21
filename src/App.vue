@@ -31,7 +31,6 @@ export default {
   --primary-color: #fff;
   --secondary-color: #111;
   --third-color: #42b983;
-  --nav-color: #222;
   --font1: 'Raleway', sans-serif;
   --font2: 'Inter', sans-serif;
   --font3: 'Roboto', sans-serif;
