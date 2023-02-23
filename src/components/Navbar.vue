@@ -6,11 +6,11 @@
         <span>&lt;/&gt;</span></router-link
       >
     </div>
-    <ul>
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
-      <li><router-link to="/projects">Projects</router-link></li>
-      <li><router-link to="/skills2">Skills</router-link></li>
+    <ul class="ul">
+      <li><router-link to="/">HOME</router-link></li>
+      <li><router-link to="/about">ABOUT</router-link></li>
+      <li><router-link to="/projects">PROJECTS</router-link></li>
+      <li><router-link to="/skills2">SKILLS</router-link></li>
     </ul>
     <div class="top-right">
       <router-link to="/contact">
@@ -122,25 +122,6 @@ li a {
   transition: 0.2s transform ease-in-out;
 }
 
-li a:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: 0.3rem;
-  left: 0;
-  background-color: #fff;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-  opacity: 80%;
-  border-radius: 40px;
-}
-
-li a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 nav ul li .router-link-active {
   color: #fff;
 }
@@ -212,5 +193,23 @@ nav ul li .router-link-active {
 }
 .envelope {
   width: 1.3rem;
+}
+h3 {
+  font-family: system-ui, sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  cursor: pointer;
+  padding: 0 0.1em;
+}
+.ul li a {
+  color: rgba(0, 0, 0, 0);
+  background: linear-gradient(90deg, #fff 50%, #696666 0) var(--_p, 100%) / 200%
+    no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.5s;
+}
+.ul li a:hover {
+  --_p: 0%;
 }
 </style>
