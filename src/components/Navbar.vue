@@ -101,6 +101,7 @@ nav {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      font-size: 1.2rem;
 
       &:hover {
         color: #fff;
@@ -207,7 +208,7 @@ h3 {
     no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .ul li a:hover {
   --_p: 0%;

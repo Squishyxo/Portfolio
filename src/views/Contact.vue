@@ -1,6 +1,10 @@
 <template>
   <div>
-    <div class="background">
+    <form
+      class="background"
+      action="https://formspree.io/f/mdovgjwv"
+      method="POST"
+    >
       <div class="container">
         <div class="screen">
           <div class="screen-header">
@@ -27,17 +31,19 @@
                   <textarea
                     class="app-form-control"
                     placeholder="MESSAGE"
+                    id="message"
+                    name="message"
                   ></textarea>
                 </div>
                 <div class="app-form-group buttons">
-                  <button class="app-form-button">SEND</button>
+                  <button class="button">SEND</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </template>
 
@@ -193,7 +199,7 @@ export default {
 }
 
 .app-form-group.buttons {
-  margin-bottom: 0;
+  padding: 1rem;
   text-align: right;
 }
 
@@ -219,18 +225,65 @@ export default {
 .app-form-control:focus {
   border-bottom-color: #ddd;
 }
-
-.app-form-button {
-  background: none;
-  border: none;
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid var(--nav-color);
+  border-radius: 7px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
   color: #fff;
-  font-size: 14px;
+  z-index: 1;
+  background-color: var(--nav-color);
   cursor: pointer;
-  outline: none;
 }
 
-.app-form-button:hover {
-  color: purple;
+.button:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:after {
+  content: '';
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #fff;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button:hover {
+  color: #111;
+}
+
+.button:hover:before {
+  top: -35%;
+  background-color: #fff;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+  top: -45%;
+  background-color: #fff;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
 @media screen and (max-width: 520px) {
