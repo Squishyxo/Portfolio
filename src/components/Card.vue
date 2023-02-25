@@ -103,41 +103,7 @@
             <div class="card__content">
               <div class="card__title">Wazuh</div>
               <p class="card__text">
-                I implemented wazuh to minitor this website.
-              </p>
-              <div class="learn">
-                <span>Read more</span>
-                <span>></span>
-              </div>
-            </div>
-          </div>
-        </router-link>
-      </li>
-      <li class="cards__item">
-        <router-link to="/securityonion">
-          <div class="card">
-            <div class="card__image card__image--so"></div>
-            <div class="card__content">
-              <div class="card__title">Security Onion</div>
-              <p class="card__text">
-                I am using Security Onion to monitor traffic on my networks.
-              </p>
-              <div class="learn">
-                <span>Read more</span>
-                <span>></span>
-              </div>
-            </div>
-          </div>
-        </router-link>
-      </li>
-      <li class="cards__item">
-        <router-link to="/securityonion">
-          <div class="card">
-            <div class="card__image card__image--so"></div>
-            <div class="card__content">
-              <div class="card__title">Security Onion</div>
-              <p class="card__text">
-                I am using Security Onion to monitor traffic on my networks.
+                I implemented wazuh to monitor this website.
               </p>
               <div class="learn">
                 <span>Read more</span>
