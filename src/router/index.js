@@ -9,6 +9,7 @@ import Securityonion from '../views/Securityonion.vue'
 import Ccna from '../views/Ccna.vue'
 import Spiderman from '../views/Spiderman.vue'
 import Wazuh from '../views/Wazuh.vue'
+import Smb from '../views/Smb.vue'
 
 const routes = [
   {
@@ -60,6 +61,11 @@ const routes = [
     path: '/wazuh',
     name: 'wazuh',
     component: Wazuh
+  },
+  {
+    path: '/smb',
+    name: 'smb',
+    component: Smb
   },
 ]
 

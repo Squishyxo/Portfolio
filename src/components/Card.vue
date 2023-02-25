@@ -113,6 +113,23 @@
           </div>
         </router-link>
       </li>
+      <li class="cards__item">
+        <router-link to="/smb">
+          <div class="card">
+            <div class="card__image card__image--so"></div>
+            <div class="card__content">
+              <div class="card__title">SMB</div>
+              <p class="card__text">
+                Server Message Protocol
+              </p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
+            </div>
+          </div>
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>
