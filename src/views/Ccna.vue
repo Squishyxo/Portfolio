@@ -195,7 +195,7 @@ export default {
     p{
       font-size: 1.25rem;
       overflow: hidden;
-      line-height: 1.5;
+      line-height: 2rem;
       img {
         margin: 0;
       }

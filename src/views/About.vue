@@ -9,13 +9,18 @@
         </a>
       </div>
       <p>
-        Hi there! My name is Mohammed Alshukaili and I am currently studying a
-        Bachelor of Cyber Security degree at Fontys in The Netherlands. I have
-        always been fascinated by technology and how it can be used to solve
-        problems and make our lives easier. I am excited to learn more about
-        programming and how it can be applied in the real world. In my free
-        time, I enjoy staying up to date with the latest trends in technology
-        and programming languages.
+        Hi there! My name is Mohammed Alshukaili and I am currently studying
+        cybersecurity. I have always been fascinated by technology and its
+        impact on our daily lives, but I am especially interested in how we can
+        protect ourselves and our information from cyber threats. As a
+        cybersecurity student, I have gained a solid understanding of network
+        security, cryptography, ethical hacking, and risk management. I am
+        constantly learning about new technologies and techniques to stay ahead
+        of cybercriminals and protect our digital assets. In my free time, I
+        enjoy exploring new technology trends, participating in online security
+        forums, and practicing my skills in cybersecurity competitions. I am
+        passionate about making the digital world a safer place for everyone and
+        am excited to see what the future holds for this rapidly evolving field.
       </p>
     </div>
   </div>
@@ -40,11 +45,10 @@ export default {
 }
 h1 {
   font-weight: 800;
-  height: 3rem;
   overflow: hidden;
 }
 p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   margin: 2rem 0;
 }
@@ -69,7 +73,7 @@ p {
     margin: 10rem auto;
   }
   p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 @media (max-width: 600px) {

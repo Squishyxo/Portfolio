@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="phoneNavigation">
-      <h1>MOHAMMED</h1>
+      <router-link to="/"><h1>MOHAMMED</h1></router-link>
       <button @click="openNav" class="btn close-icon">
         <span></span>
         <span></span>
