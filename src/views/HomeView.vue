@@ -1,9 +1,12 @@
 <template>
   <div class="container">
     <div class="header">
-      <div class="left-header">
+      <div class="left-header" :class="{ 'white-svg': lightTheme }">
         <h1>Hi, I'm Mohammed</h1>
-        <p class="muted">@M7MD.2k</p>
+        <div class="location">
+          <img src="../assets/location.svg" />
+          <p>Oman - The Netherlands</p>
+        </div>
         <p class="intro">
           I do networking, monitoring, programming & a bit of designing.
         </p>
@@ -47,6 +50,11 @@
 
 export default {
   name: 'HomeView',
+  computed: {
+    lightTheme() {
+      return this.$store.state.lightTheme;
+    },
+  },
 };
 </script>
 
@@ -61,7 +69,6 @@ export default {
 .left-header h1 {
   font-size: 3rem;
   line-height: 3rem;
-  height: 5rem;
   font-family: var(--font1);
 }
 .header {
@@ -176,6 +183,12 @@ export default {
         display: none;
       }
     }
+    .location {
+      font-size: 1rem;
+      img {
+        width: 1.2rem;
+      }
+    }
   }
   .centerimg {
     img {
@@ -272,5 +285,27 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: var(--secondary-color) !important;
   opacity: 100%;
+}
+.white-svg {
+  img {
+    filter: invert(100%) sepia(21%) saturate(0%) hue-rotate(304deg)
+      brightness(104%) contrast(104%);
+  }
+}
+.location {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.1rem;
+  font-family: var(--font3);
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  margin-left: 0.4rem;
+  p {
+    opacity: 80%;
+  }
+  img {
+    width: 1.5rem;
+  }
 }
 </style>
