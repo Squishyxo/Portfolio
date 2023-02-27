@@ -20,21 +20,6 @@
         </router-link>
       </li>
       <li class="cards__item">
-        <router-link to="/spiderman">
-          <div class="card">
-            <div class="card__image card__image--spiderman"></div>
-            <div class="card__content">
-              <div class="card__title">Spiderman</div>
-              <p class="card__text">Spiderman Spiderman Spiderman Spiderman</p>
-              <div class="learn">
-                <span>Read more</span>
-                <span>></span>
-              </div>
-            </div>
-          </div>
-        </router-link>
-      </li>
-      <li class="cards__item">
         <router-link to="/ccna">
           <div class="card">
             <div class="card__image card__image--record"></div>
@@ -50,7 +35,7 @@
         </router-link>
       </li>
       <li class="cards__item">
-        <router-link to="/ccna">
+        <router-link to="/darkweb">
           <div class="card">
             <div class="card__image card__image--darkweb"></div>
             <div class="card__content">
@@ -65,7 +50,7 @@
         </router-link>
       </li>
       <li class="cards__item">
-        <router-link to="/ccna">
+        <router-link to="/frontend">
           <div class="card">
             <div class="card__image card__image--frontend"></div>
             <div class="card__content">
@@ -121,6 +106,23 @@
               <div class="card__title">SMB</div>
               <p class="card__text">
                 Server Message Protocol
+              </p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
+            </div>
+          </div>
+        </router-link>
+      </li>
+      <li class="cards__item">
+        <router-link to="/alerts">
+          <div class="card">
+            <div class="card__image card__image--so"></div>
+            <div class="card__content">
+              <div class="card__title">Alerts</div>
+              <p class="card__text">
+                Analyzing alerts and why they get triggered.
               </p>
               <div class="learn">
                 <span>Read more</span>
@@ -254,7 +256,7 @@ export default {
 }
 
 .card__text {
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 p,

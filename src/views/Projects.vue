@@ -23,6 +23,8 @@ export default {
   h1 {
     text-align: center;
     margin-bottom: 3rem;
+    padding: .5rem;
+
   }
   width: 70vw;
   margin: 10rem auto 5rem auto;

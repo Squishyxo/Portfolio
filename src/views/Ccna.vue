@@ -2,6 +2,7 @@
   <div>
     <div class="container">
       <h1>Cisco Certified Network Associate CCNA</h1>
+      <p class="date">Semester 4 - 2022</p>
       <div class="content">
         <h2>What is CCNA?</h2>
         <p>
@@ -152,14 +153,14 @@ export default {
 
 <style scoped lang="scss">
 .container {
-  width: 70vw;
-  margin: 15rem auto 5rem auto;
+  width: 60vw;
+  margin: 12rem auto 5rem auto;
   padding: 0.5rem;
   font-family: var(--font2);
 
   h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: clamp(18px,1rem + 2vw,36px);;
     letter-spacing: 0.2rem;
     line-height: 1.6;
   }
@@ -169,6 +170,9 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    h1, h2, h3, h4, h5, h6{
+      padding: var(--header-padding)
+    }
     h2 {
       font-size: 2rem;
     }
@@ -188,14 +192,21 @@ export default {
         margin: 1rem 0;
         font-size: 1.3rem;
     }
-    p {
-      font-size: 1.2rem;
+    p{
+      font-size: 1.25rem;
+      overflow: hidden;
+      line-height: 1.5;
       img {
         margin: 0;
       }
     }
   }
 }
+ul li, strong{
+  font-size: 1.25rem;
+  padding: var(--header-padding);
+}
+
 @media (max-width: 1300px) {
 .container{
   margin: 10rem auto 5rem auto;
@@ -206,7 +217,6 @@ export default {
 .container{
   width: 95vw;
   h1{
-    font-size: 1.6rem;
     letter-spacing: 0.1rem;
   }
 .content {

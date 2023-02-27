@@ -2,6 +2,7 @@
   <div>
     <div class="container">
       <h1>Wazuh</h1>
+      <p class="date">Semester 4 - 2022</p>
       <div class="content">
         <h2>> Why did I use Wazuh?</h2>
         <p>

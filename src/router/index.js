@@ -7,9 +7,11 @@ import Skills from '../views/Skills.vue'
 import Skills2 from '../views/Skills2.vue'
 import Securityonion from '../views/Securityonion.vue'
 import Ccna from '../views/Ccna.vue'
-import Spiderman from '../views/Spiderman.vue'
 import Wazuh from '../views/Wazuh.vue'
 import Smb from '../views/Smb.vue'
+import Alerts from '../views/Alerts.vue'
+import Frontend from '../views/Frontend.vue'
+import Darkweb from '../views/Darkweb.vue'
 
 const routes = [
   {
@@ -53,11 +55,6 @@ const routes = [
     component: Ccna
   },
     {
-    path: '/spiderman',
-    name: 'spiderman',
-    component: Spiderman
-  },
-    {
     path: '/wazuh',
     name: 'wazuh',
     component: Wazuh
@@ -66,6 +63,21 @@ const routes = [
     path: '/smb',
     name: 'smb',
     component: Smb
+  },
+  {
+    path: '/alerts',
+    name: 'alerts',
+    component: Alerts
+  },
+  {
+    path: '/frontend',
+    name: 'frontend',
+    component: Frontend
+  },
+  {
+    path: '/darkweb',
+    name: 'darkweb',
+    component: Darkweb
   },
 ]
 

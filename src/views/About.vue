@@ -45,7 +45,7 @@ h1 {
 }
 p {
   font-size: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 1.5;
   margin: 2rem 0;
 }
 .about-header {
@@ -65,7 +65,7 @@ p {
 }
 @media (max-width: 1100px) {
   .container {
-    width: 80%;
+    width: 90%;
     margin: 10rem auto;
   }
   p {

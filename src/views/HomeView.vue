@@ -35,7 +35,7 @@
       </div>
       <div class="centerimg">
         <div class="right-header">
-          <img src="../assets/frontend.jpeg" />
+          <img src="../assets/home.jpg" />
         </div>
       </div>
     </div>
@@ -70,7 +70,7 @@ export default {
 }
 .right-header img {
   width: 35vw;
-  height: 30rem;
+  height: 50vh;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -117,16 +117,6 @@ export default {
     width: 95%;
     margin: 10rem auto;
   }
-  .centerimg {
-    margin: 5rem 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    img {
-      width: 60vw;
-      height: 70vh;
-    }
-  }
   .icons {
     width: 100%;
     justify-content: center;
@@ -141,9 +131,12 @@ export default {
     }
   }
   .centerimg {
+    display: flex;
+    justify-content: center;
     margin: 3rem 0;
     img {
       width: 90vw;
+      height: 60vh;
     }
   }
   .learn-more {
@@ -166,7 +159,7 @@ export default {
 }
 @media (max-width: 600px) {
   .container {
-    margin: 7rem auto auto auto;
+    margin: 9rem auto auto auto;
   }
   .left-header h1 {
     font-size: 2rem;
@@ -185,9 +178,8 @@ export default {
     }
   }
   .centerimg {
-    margin: 3rem 0;
     img {
-      width: 90vw;
+      height: 50vh;
     }
   }
 }

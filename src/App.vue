@@ -35,6 +35,7 @@ export default {
   --font1: 'Raleway', sans-serif;
   --font2: 'Inter', sans-serif;
   --font3: 'Roboto', sans-serif;
+  --header-padding: .3rem;
 
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -76,5 +77,11 @@ h5,
 h6 {
   min-height: 2rem;
   overflow: hidden;
+}
+.date{
+  text-align: center;
+  opacity: 80%;
+  padding: var(--header-padding);
+  color: var(--primary-color)
 }
 </style>

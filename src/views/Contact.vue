@@ -154,6 +154,7 @@ export default {
 .screen-body-item.left {
   text-align: center;
   overflow: hidden;
+  padding: .2rem;
 }
 .screen-body-item.right {
   padding: 0 6rem;
@@ -194,7 +195,7 @@ export default {
   margin-bottom: 15px;
 }
 
-.app-form-group.message {
+.app-form-group.message{
   margin-top: 40px;
 }
 
@@ -315,6 +316,16 @@ export default {
 
   .screen-body-item {
     padding: 0;
+  }
+.screen-body-item.right {
+  padding: 0;
+  }
+.app-form-control {
+  font-size: 1rem;
+  }
+.screen-body {
+  margin-top: 0;
+  height: 90%;
   }
 }
 </style>
