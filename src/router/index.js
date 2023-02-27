@@ -12,6 +12,7 @@ import Smb from '../views/Smb.vue'
 import Alerts from '../views/Alerts.vue'
 import Frontend from '../views/Frontend.vue'
 import Darkweb from '../views/Darkweb.vue'
+import Docker from '../views/Docker.vue'
 
 const routes = [
   {
@@ -78,6 +79,11 @@ const routes = [
     path: '/darkweb',
     name: 'darkweb',
     component: Darkweb
+  },
+  {
+    path: '/docker',
+    name: 'docker',
+    component: Docker
   },
 ]
 

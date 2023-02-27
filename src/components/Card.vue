@@ -20,7 +20,7 @@
         </router-link>
       </li>
       <li class="cards__item">
-        <router-link to="/ccna">
+        <router-link to="/docker">
           <div class="card">
             <div class="card__image card__image--record"></div>
             <div class="card__content">
@@ -55,7 +55,7 @@
             <div class="card__image card__image--frontend"></div>
             <div class="card__content">
               <div class="card__title">Frontend</div>
-              <p class="card__text">I did something</p>
+              <p class="card__text">I studied frontend for 2 years</p>
               <div class="learn">
                 <span>Read more</span>
                 <span>></span>
@@ -84,7 +84,7 @@
       <li class="cards__item">
         <router-link to="/wazuh">
           <div class="card">
-            <div class="card__image card__image--so"></div>
+            <div class="card__image card__image--wazuh"></div>
             <div class="card__content">
               <div class="card__title">Wazuh</div>
               <p class="card__text">
@@ -104,9 +104,7 @@
             <div class="card__image card__image--so"></div>
             <div class="card__content">
               <div class="card__title">SMB</div>
-              <p class="card__text">
-                Server Message Protocol
-              </p>
+              <p class="card__text">Server Message Protocol</p>
               <div class="learn">
                 <span>Read more</span>
                 <span>></span>
@@ -240,11 +238,14 @@ export default {
   background-image: url(../assets/darkweb.jpg);
 }
 .card__image--record {
-  background-image: url(../assets/mo2.png);
+  background-image: url(../assets/docker.jpg);
 }
 
 .card__image--ccna {
   background-image: url(../assets/ccna+.jpg);
+}
+.card__image--wazuh {
+  background-image: url(../assets/wazuh-dashbaord.jpg);
 }
 
 .card__title {
