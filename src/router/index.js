@@ -13,6 +13,7 @@ import Alerts from '../views/Alerts.vue'
 import Frontend from '../views/Frontend.vue'
 import Darkweb from '../views/Darkweb.vue'
 import Docker from '../views/Docker.vue'
+import Python from '../views/Python.vue'
 
 const routes = [
   {
@@ -84,6 +85,11 @@ const routes = [
     path: '/docker',
     name: 'docker',
     component: Docker
+  },
+  {
+    path: '/python',
+    name: 'python',
+    component: Python
   },
 ]
 
