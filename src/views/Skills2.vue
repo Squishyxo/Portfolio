@@ -41,7 +41,7 @@
           </div>
           <span class="line"></span>
           <div>
-            <img src="../assets/github2.svg" />
+            <img src="../assets/github+.svg" />
             <h2>Git</h2>
             <p>Working with git to share the work with other students.</p>
           </div>
@@ -111,7 +111,7 @@
             <span class="fa fa-star empty"></span>
           </div>
           <div>
-            <img src="../assets/github2.svg" />
+            <img src="../assets/github+.svg" />
             <h2>Git</h2>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -185,7 +185,7 @@ section {
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  gap: 4rem;
+  gap: 2rem;
   flex-wrap: wrap;
   box-shadow: #222 0px 1px 15px;
   padding: 1rem;

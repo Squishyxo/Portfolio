@@ -28,11 +28,23 @@
 
 <script>
 export default {
-  name: 'Projects',
+  name: 'About',
   computed: {
     lightTheme() {
       return this.$store.state.lightTheme;
     },
+  },
+  mounted() {
+    sr.reveal('.oman, h1', {
+      duration: 2000,
+      origin: 'left',
+      distance: '200px',
+    });
+    sr.reveal('p', {
+      duration: 3000,
+      origin: 'left',
+      distance: '200px',
+    });
   },
 };
 </script>

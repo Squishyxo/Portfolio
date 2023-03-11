@@ -21,20 +21,6 @@
             <button class="small">More about me ></button>
           </div>
         </router-link>
-        <div class="icons">
-          <a
-            href="https://www.linkedin.com/in/mohammed-alshukaili-578a64222/"
-            target="_blank"
-          >
-            <img src="../assets/linkedin.svg" />
-          </a>
-          <a href="https://github.com/Squishyxo" target="_blank">
-            <img src="../assets/github.svg"
-          /></a>
-          <a href="https://www.instagram.com/m7md.2k/" target="_blank">
-            <img src="../assets/instagram.svg" />
-          </a>
-        </div>
       </div>
       <div class="centerimg">
         <div class="right-header">
@@ -47,7 +33,7 @@
 
 <script>
 // @ is an alias to /src
-
+import '../views/parallax.js';
 export default {
   name: 'HomeView',
   computed: {
@@ -55,9 +41,20 @@ export default {
       return this.$store.state.lightTheme;
     },
   },
+  mounted() {
+    sr.reveal('.left-header', {
+      duration: 2000,
+      origin: 'left',
+      distance: '200px',
+    });
+    sr.reveal('.right-header', {
+      duration: 2000,
+      origin: 'right',
+      distance: '20px',
+    });
+  },
 };
 </script>
-
 <style scoped lang="scss">
 * {
   overflow-x: visible !important;
@@ -74,10 +71,11 @@ export default {
 .header {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 .right-header img {
-  width: 35vw;
-  height: 50vh;
+  width: 30vw;
+  height: 40vh;
   object-fit: cover;
   border-radius: 10px;
 }

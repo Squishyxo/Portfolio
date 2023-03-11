@@ -1,18 +1,17 @@
 <template>
   <div>
-    <Navbar />
-    <PhoneNavigation />
+    <TopRight />
+    <Footer2 />
     <router-view />
   </div>
 </template>
-
 <script>
-import Navbar from './components/Navbar.vue';
-import PhoneNavigation from './components/PhoneNavigation.vue';
+import TopRight from './components/TopRight.vue';
+import Footer2 from './components/Footer2.vue';
 export default {
   components: {
-    Navbar,
-    PhoneNavigation,
+    TopRight,
+    Footer2,
   },
 };
 </script>
@@ -22,6 +21,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=NTR&display=swap');
 
 :root {
   /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; */
@@ -35,7 +35,8 @@ export default {
   --font1: 'Raleway', sans-serif;
   --font2: 'Inter', sans-serif;
   --font3: 'Roboto', sans-serif;
-  --header-padding: .3rem;
+  --font4: 'NTR', sans-serif;
+  --header-padding: 0.3rem;
 
   color: var(--primary-color);
   background-color: var(--secondary-color);
@@ -78,10 +79,16 @@ h6 {
   min-height: 2rem;
   overflow: hidden;
 }
-.date{
+.date {
   text-align: center;
   opacity: 80%;
   padding: var(--header-padding);
-  color: var(--primary-color)
+  color: var(--primary-color);
+}
+.main {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
