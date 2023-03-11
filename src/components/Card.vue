@@ -130,6 +130,23 @@
           </div>
         </router-link>
       </li>
+      <li class="cards__item">
+        <router-link to="/python">
+          <div class="card">
+            <div class="card__image card__image--frontend"></div>
+            <div class="card__content">
+              <div class="card__title">Python</div>
+              <p class="card__text">
+                Writing python scripts to automate tasks
+              </p>
+              <div class="learn">
+                <span>Read more</span>
+                <span>></span>
+              </div>
+            </div>
+          </div>
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>
