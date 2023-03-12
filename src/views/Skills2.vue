@@ -194,7 +194,7 @@ h1 {
   margin: 5rem 0;
 }
 section {
-  width: 100%;
+  width: 90%;
   margin: 2rem auto;
   border-radius: 15px;
   display: flex;
@@ -202,6 +202,7 @@ section {
   gap: 2rem;
   flex-wrap: wrap;
   padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 28px;
 
 }
 section div {
@@ -209,6 +210,9 @@ section div {
   text-align: center;
   margin: 0.2rem 0;
   overflow: hidden;
+
+
+
 }
 section div > * {
   padding: 0.6rem 0;

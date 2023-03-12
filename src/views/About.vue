@@ -2,11 +2,11 @@
   <div id="about">
     <div class="container">
       <div class="about-header">
-        <h1>/ About me</h1>
+        <h1 class="abouth1">/ About me</h1>
         <span></span>
       </div>
       <div class="about-content">
-      <p>
+      <p class="abouttext">
         "I am currently pursuing a <span class="leetcode"><a href="https://fontys.edu/" target="_blank">Fontys</a></span> Bachelor's degree in Cyber Security, which has been a passion of mine since I was young. At the same time, I am working on 
         developing my coding skills by solving <span class="leetcode"><a href="https://leetcode.com/" target="_blank">Leetcode</a></span> problems. <br><br>In my free time, I enjoy studying
         the <span class="leetcode"><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank">CCNA</a></span> & 
@@ -35,15 +35,15 @@ export default {
     window.sr = ScrollReveal({
     reset: true,
 });
-    sr.reveal('p', {
+    sr.reveal('.abouttext', {
       duration: 1000,
-      origin: 'bottom',
+      origin: 'right',
       distance: '50px',
     });
-    sr.reveal('h1', {
-      duration: 1000,
+    sr.reveal('.abouth1', {
+      duration: 1500,
       origin: 'left',
-      distance: '50px',
+      distance: '100px',
     });
     // ScrollReveal().reveal('p', { duration: 1000});
     // ScrollReveal().reveal('p', { easing: 'ease-in' });

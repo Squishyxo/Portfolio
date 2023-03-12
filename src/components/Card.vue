@@ -158,6 +158,13 @@ export default {
     title: String,
     description: String,
   },
+  mounted() {
+    sr.reveal('.learn', {
+      duration: 1000,
+      origin: 'left',
+      distance: '15px',
+    });
+  }
 };
 </script>
 

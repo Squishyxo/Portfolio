@@ -4,7 +4,8 @@
       <button class="cssbuttons-io-button">
         Contact Me
         <div class="icon">
-          <img class="envelope" src="../assets/envelope.svg" />
+          <img v-if="lightTheme" class="envelope" src="../assets/envelope2.svg" />
+          <img v-else class="envelope" src="../assets/envelope.svg" />
         </div>
       </button>
     </router-link>
@@ -143,12 +144,12 @@ nav ul li .router-link-active {
   }
 }
 .cssbuttons-io-button {
-  background: #111;
-  color: white;
+  background: var(--secondary-color);
+  color: var(--primary-color);
   font-family: inherit;
   padding: 0.35em;
   padding-left: 1.2em;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   border-radius: 0.9em;
   border: none;
@@ -159,12 +160,12 @@ nav ul li .router-link-active {
   position: relative;
   height: 2.8em;
   padding-right: 3.3em;
-  border: 2px solid #fff;
+  border: 2px solid var(--primary-color);
   cursor: pointer;
 }
 
 .cssbuttons-io-button .icon {
-  background: white;
+  background: var(--secondary-color);
   margin-left: 1em;
   position: absolute;
   display: flex;
