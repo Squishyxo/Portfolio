@@ -1,8 +1,10 @@
 <template>
-  <div>
+  <div id="skills">
     <div class="container">
       <div class="skills">
-        <h1>SKILLS</h1>
+        <div class="skills-header">
+        <h1>/ skills</h1>
+        </div>
         <section :class="{ 'white-svg': lightTheme }">
           <div>
             <img src="../assets/frontend.svg" />
@@ -160,40 +162,53 @@ export default {
       return this.$store.state.lightTheme;
     },
   },
+  mounted() {
+  ScrollReveal().reveal('.checked', {
+    distance: '0px',
+    opacity: 0,
+    duration: 1000
+});
+  }
 };
 </script>
 
 <style scoped lang="scss">
 .container {
-  width: 100vw;
+  width: 100%;
   margin: 10rem auto 5rem auto;
   font-family: var(--font2);
   padding: 1rem;
 }
 .softwares {
-  margin-top: 8rem;
+  margin-top: 6rem;
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 h1 {
-  text-align: center;
   overflow: hidden;
-  padding: 0.2rem;
-  margin: 2rem 0;
+  padding: 0.4rem;
+  text-align: center;
+  margin: 5rem 0;
 }
 section {
-  width: 80%;
+  width: 100%;
   margin: 2rem auto;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  box-shadow: #222 0px 1px 15px;
   padding: 1rem;
+
 }
 section div {
   width: 20%;
   text-align: center;
   margin: 0.2rem 0;
+  overflow: hidden;
 }
 section div > * {
   padding: 0.6rem 0;
@@ -212,7 +227,7 @@ img {
   }
 }
 .white-svg {
-  background-color: #222;
+  background-color: var(--secondary-color);
   img {
     filter: invert(100%) sepia(21%) saturate(0%) hue-rotate(304deg)
       brightness(104%) contrast(104%);

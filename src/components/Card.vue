@@ -19,7 +19,7 @@
           </div>
         </router-link>
       </li>
-      <li class="cards__item">
+      <!-- <li class="cards__item">
         <router-link to="/docker">
           <div class="card">
             <div class="card__image card__image--record"></div>
@@ -48,7 +48,7 @@
             </div>
           </div>
         </router-link>
-      </li>
+      </li> -->
       <li class="cards__item">
         <router-link to="/frontend">
           <div class="card">

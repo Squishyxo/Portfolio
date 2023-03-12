@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="projects">
     <div class="container">
-      <h1>Projects</h1>
+      <h1>/ projects</h1>
       <Card />
     </div>
   </div>
@@ -24,7 +24,6 @@ export default {
     text-align: center;
     margin-bottom: 3rem;
     padding: .5rem;
-
   }
   width: 70vw;
   margin: 10rem auto 5rem auto;

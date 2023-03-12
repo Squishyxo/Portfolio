@@ -11,18 +11,18 @@
     <div class="overlay"></div>
     <div class="overlay2">
       <ul class="phoneNav">
-        <router-link to="/" @click="openNav">
+        <a href="/#home" @click="openNav">
           <li><strong>HOME</strong></li>
-        </router-link>
-        <router-link to="/about" @click="openNav">
+        </a>
+        <a href="/#about" @click="openNav">
           <li><strong>ABOUT</strong></li>
-        </router-link>
-        <router-link to="/projects" @click="openNav"
+        </a>
+        <a href="/#projects" @click="openNav"
           ><li><strong>PROJECTS</strong></li>
-        </router-link>
-        <router-link to="/skills2" @click="openNav"
+        </a>
+        <a href="/#skills" @click="openNav"
           ><li><strong>SKILLS</strong></li>
-        </router-link>
+        </a>
         <router-link to="/contact" @click="openNav"
           ><li><strong>CONTACT</strong></li>
         </router-link>

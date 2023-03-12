@@ -1,27 +1,19 @@
 <template>
-  <div>
+  <div id="about">
     <div class="container">
       <div class="about-header">
-        <h1>About</h1>
-        <a href="https://en.wikipedia.org/wiki/Oman" target="_blank"
-          ><img v-if="!lightTheme" class="oman" src="../assets/oman2.svg" />
-          <img v-else class="oman" src="../assets/oman3.svg" />
-        </a>
+        <h1>/ About me</h1>
+        <span></span>
       </div>
+      <div class="about-content">
       <p>
-        Hi there! My name is Mohammed Alshukaili and I am currently studying
-        cybersecurity. I have always been fascinated by technology and its
-        impact on our daily lives, but I am especially interested in how we can
-        protect ourselves and our information from cyber threats. As a
-        cybersecurity student, I have gained a solid understanding of network
-        security, cryptography, ethical hacking, and risk management. I am
-        constantly learning about new technologies and techniques to stay ahead
-        of cybercriminals and protect our digital assets. In my free time, I
-        enjoy exploring new technology trends, participating in online security
-        forums, and practicing my skills in cybersecurity competitions. I am
-        passionate about making the digital world a safer place for everyone and
-        am excited to see what the future holds for this rapidly evolving field.
+        "I am currently pursuing a <span class="leetcode"><a href="https://fontys.edu/" target="_blank">Fontys</a></span> Bachelor's degree in Cyber Security, which has been a passion of mine since I was young. At the same time, I am working on 
+        developing my coding skills by solving <span class="leetcode"><a href="https://leetcode.com/" target="_blank">Leetcode</a></span> problems. <br><br>In my free time, I enjoy studying
+        the <span class="leetcode"><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank">CCNA</a></span> & 
+        <span class="leetcode"><a href="https://www.comptia.org/certifications/security" target="_blank">Security+</a></span> as I am planning to get both certificates before
+        I graduate.
       </p>
+      </div>
     </div>
   </div>
 </template>
@@ -35,49 +27,88 @@ export default {
     },
   },
   mounted() {
-    sr.reveal('.oman, h1', {
-      duration: 2000,
-      origin: 'left',
-      distance: '200px',
-    });
+    // sr.reveal('.oman, h1', {
+    //   duration: 1000,
+    //   origin: 'left',
+    //   distance: '200px',
+    // });
+    window.sr = ScrollReveal({
+    reset: true,
+});
     sr.reveal('p', {
-      duration: 3000,
-      origin: 'left',
-      distance: '200px',
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
     });
+    sr.reveal('h1', {
+      duration: 1000,
+      origin: 'left',
+      distance: '50px',
+    });
+    // ScrollReveal().reveal('p', { duration: 1000});
+    // ScrollReveal().reveal('p', { easing: 'ease-in' });
+// ScrollReveal().reveal('h1', { easing: 'steps(5)' });
+// ScrollReveal().reveal('.checked', {
+//     distance: '0px',
+//     opacity: 0.5
+// });
+// ScrollReveal({ distance: '60px' });
+// ScrollReveal().reveal('p', { origin: 'bottom' });
+// ScrollReveal().reveal('h1', { origin: 'top' });
+// ScrollReveal().reveal('p', { scale: 0.85 });
+// ScrollReveal().reveal('p', {
+//     afterReveal: function(el) {
+//         ScrollReveal().clean(el);
+//     }
+// });
+// ScrollReveal().reveal('h1');
+// ScrollReveal().reveal('p', { desktop: false });
+// ScrollReveal().reveal('p', { viewFactor: 0.5 });
   },
 };
 </script>
 
 <style scoped>
 .container {
-  width: 50%;
+  width: 80%;
   margin: 15rem auto 5rem auto;
-  font-family: var(--font2);
+  font-family: var(--font4);
 }
 h1 {
   font-weight: 800;
   overflow: hidden;
+  font-size: 3rem;
+  padding: .5rem;
 }
 p {
   font-size: 1.5rem;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 2rem 0;
+  overflow: hidden;
 }
 .about-header {
   display: flex;
-  width: 100%;
   height: 5rem;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
+  gap: 2rem;
 }
 .about-header > * {
   display: flex;
   text-align: center;
   align-items: center;
 }
-.oman {
-  width: 4rem;
+.about-header span{
+  width: 15%;
+  height: .1rem;
+  background-color: var(--primary-color);
+}
+.about-content > p{
+width: 60%;
+}
+.leetcode{
+  color: #64ffda;
+  font-weight: bold;
 }
 @media (max-width: 1100px) {
   .container {
@@ -85,8 +116,20 @@ p {
     margin: 10rem auto;
   }
   p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
+  .about-header{
+    margin-top: 20rem;
+  }
+  .about-content > p{
+width: 100%;
+}
+.about-header {
+  width: 100%;
+}
+.about-header span{
+  display: none;
+}
 }
 @media (max-width: 600px) {
   .oman {

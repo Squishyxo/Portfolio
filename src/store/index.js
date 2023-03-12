@@ -10,8 +10,8 @@ export default createStore({
   changeTheme(state) {
     state.lightTheme = !state.lightTheme;
     if (state.lightTheme === true) {
-      document.documentElement.style.setProperty('--primary-color', '#fff');
-      document.documentElement.style.setProperty('--secondary-color', '#111');
+      document.documentElement.style.setProperty('--primary-color', '#FFCB36');
+      document.documentElement.style.setProperty('--secondary-color', '#0E141F');
       document.documentElement.style.setProperty('--third-color', '#42b983');
       document.documentElement.style.setProperty('--cards-color', '#E9EDDE');
       document.documentElement.style.setProperty('--code-color', '#111');

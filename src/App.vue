@@ -2,16 +2,19 @@
   <div>
     <TopRight />
     <Footer2 />
+    <PhoneNavigation />
     <router-view />
   </div>
 </template>
 <script>
 import TopRight from './components/TopRight.vue';
 import Footer2 from './components/Footer2.vue';
+import PhoneNavigation from './components/PhoneNavigation.vue';
 export default {
   components: {
     TopRight,
     Footer2,
+    PhoneNavigation,
   },
 };
 </script>
@@ -28,9 +31,10 @@ export default {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  --primary-color: #fff;
-  --secondary-color: #111;
+  --primary-color: #FFCB36;
+  --secondary-color: #0E141F;
   --third-color: #42b983;
+  --cards-color: #E9EDDE;
   --code-color: #111;
   --font1: 'Raleway', sans-serif;
   --font2: 'Inter', sans-serif;
@@ -90,5 +94,10 @@ h6 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 1100px) {
+.main{
+width: 100%;
+}
 }
 </style>

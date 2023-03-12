@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" id="home">
     <div class="header">
       <div class="left-header" :class="{ 'white-svg': lightTheme }">
         <h1>Hi, I'm Mohammed</h1>
@@ -10,7 +10,7 @@
         <p class="intro">
           I do networking, monitoring, programming & a bit of designing.
         </p>
-        <router-link to="/about">
+        <a href="#about">
           <div>
             <button class="learn-more">
               <span class="circle" aria-hidden="true">
@@ -20,7 +20,7 @@
             </button>
             <button class="small">More about me ></button>
           </div>
-        </router-link>
+        </a>
       </div>
       <div class="centerimg">
         <div class="right-header">
@@ -43,12 +43,12 @@ export default {
   },
   mounted() {
     sr.reveal('.left-header', {
-      duration: 2000,
+      duration: 1000,
       origin: 'left',
       distance: '200px',
     });
     sr.reveal('.right-header', {
-      duration: 2000,
+      duration: 1000,
       origin: 'right',
       distance: '20px',
     });
@@ -62,6 +62,7 @@ export default {
 .container {
   width: 80%;
   margin: 15rem auto 5rem auto;
+  height: 50vh;
 }
 .left-header h1 {
   font-size: 3rem;

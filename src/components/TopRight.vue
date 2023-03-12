@@ -209,4 +209,9 @@ h3 {
 .ul li a:hover {
   --_p: 0%;
 }
+@media (max-width: 1100px) {
+.top-right{
+  display: none;
+}
+}
 </style>
