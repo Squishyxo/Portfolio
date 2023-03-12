@@ -136,9 +136,7 @@
             <div class="card__image card__image--frontend"></div>
             <div class="card__content">
               <div class="card__title">Python</div>
-              <p class="card__text">
-                Writing python scripts to automate tasks
-              </p>
+              <p class="card__text">Writing python scripts to automate tasks</p>
               <div class="learn">
                 <span>Read more</span>
                 <span>></span>
@@ -164,7 +162,7 @@ export default {
       origin: 'left',
       distance: '15px',
     });
-  }
+  },
 };
 </script>
 
@@ -211,7 +209,7 @@ export default {
   &:hover {
     .card__image {
       filter: contrast(100%);
-      height: 57%;
+      scale: 1.05;
     }
   }
 }
@@ -300,6 +298,5 @@ span {
     margin: 0 1rem;
     font-weight: 500;
   }
-  transform: translateY(-0.4rem);
 }
 </style>

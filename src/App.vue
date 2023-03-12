@@ -16,6 +16,11 @@ export default {
     Footer2,
     PhoneNavigation,
   },
+  mounted() {
+    window.sr = ScrollReveal({
+      reset: true,
+    });
+  },
 };
 </script>
 
@@ -31,12 +36,13 @@ export default {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  --primary-color: #FFCB36;
-  --secondary-color: #0E141F;
+  --primary-color: #ffcb36;
+  --secondary-color: #0e141f;
   --third-color: #42b983;
-  --cards-color: #E9EDDE;
+  --cards-color: #e9edde;
   --code-color: #111;
-  --button-color: #FFCB36;
+  --alerts-color: #fff;
+  --button-color: #ffcb36;
   --font1: 'Raleway', sans-serif;
   --font2: 'Inter', sans-serif;
   --font3: 'Roboto', sans-serif;
@@ -49,17 +55,33 @@ export default {
 // html {
 //   --s: 50px;
 //   --c: #191b22;
-//   --_s: calc(2*var(--s)) calc(2*var(--s));
+//   --_s: calc(2 * var(--s)) calc(2 * var(--s));
 //   --_g: 35.36% 35.36% at;
-//   --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
-//   background: 
-//     radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
-//     radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
-//     radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
-//     radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
-//     repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
-//     radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+//   --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
+//   background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) /
+//       var(--_s),
+//     radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+//     radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+//     radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+//     repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+//     radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
 //   background-attachment: fixed;
+// }
+// html {
+//   --s: 150px; /* control the size */
+
+//   background: linear-gradient(
+//       135deg,
+//       #0000 18.75%,
+//       var(--secondary-color) 0 31.25%,
+//       #0000 0
+//     ),
+//     repeating-linear-gradient(
+//       45deg,
+//       var(--secondary-color) -6.25% 6.25%,
+//       #0c0d18 0 18.75%
+//     );
+//   background-size: var(--s) var(--s);
 // }
 
 * {
@@ -112,8 +134,8 @@ h6 {
   align-items: center;
 }
 @media (max-width: 1100px) {
-.main{
-width: 100%;
-}
+  .main {
+    width: 100%;
+  }
 }
 </style>

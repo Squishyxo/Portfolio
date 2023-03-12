@@ -1,25 +1,29 @@
 <template>
-<div>
+  <div>
     <div class="container">
-      <h1>Python</h1>
-      <p>Python is a powerful programming language that can be used to automate tasks and save time. I will do this by coming up a problem whic is a task in this scenario,
-        and I will try to solve the problem using by writing a python script.
+      <h1>/ Python</h1>
+      <p>
+        Python is a powerful programming language that can be used to automate
+        tasks and save time. I will do this by coming up a problem whic is a
+        task in this scenario, and I will try to solve the problem using by
+        writing a python script.
       </p>
       <div class="content">
         <h2>Problem 1:</h2>
-        <p class="code">The downlods folder in my file system has too many images that feel a bit chaotic. I need to come up with a solution using python.<br/>
-        The script will mv all the images from the Downloads folder to a new folder.
+        <p class="code">
+          The downlods folder in my file system has too many images that feel a
+          bit chaotic. I need to come up with a solution using python.<br />
+          The script will mv all the images from the Downloads folder to a new
+          folder.
         </p>
-        <img src="../assets/PyScript1.png" alt="">
+        <img src="../assets/PyScript1.png" alt="" />
       </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped lang="scss">
@@ -39,7 +43,8 @@ export default {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    h2, h3 {
+    h2,
+    h3 {
       font-size: 1.5rem;
     }
     img {
@@ -49,17 +54,16 @@ export default {
   }
 }
 p {
-      font-size: 1.25rem;
-      line-height: 2rem;
-       overflow: hidden;
-
+  font-size: 1.25rem;
+  line-height: 2rem;
+  overflow: hidden;
 }
-.code{
-    padding: .5rem;
-    background-color: var(--primary-color);
-    color: var(--code-color);
-    border-radius: 7px;
-      line-height: 2;
+.code {
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--code-color);
+  border-radius: 7px;
+  line-height: 2;
 }
 @media (max-width: 1300px) {
   .container {

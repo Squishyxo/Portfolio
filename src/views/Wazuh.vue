@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="container">
-      <h1>Wazuh</h1>
+      <h1>/ WAZUH</h1>
       <p class="date">Semester 4 - 2022</p>
       <div class="content">
-        <h2>> Why did I use Wazuh?</h2>
+        <h2>Why did I use Wazuh?</h2>
         <p>
           I used Wazuh as my SIEM to monitor this website. I didn't need to add
           wazuh agents because I only needed to monitor one server which is the

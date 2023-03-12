@@ -6,13 +6,35 @@
         <span></span>
       </div>
       <div class="about-content">
-      <p class="abouttext">
-        "I am currently pursuing a <span class="leetcode"><a href="https://fontys.edu/" target="_blank">Fontys</a></span> Bachelor's degree in Cyber Security, which has been a passion of mine since I was young. At the same time, I am working on 
-        developing my coding skills by solving <span class="leetcode"><a href="https://leetcode.com/" target="_blank">Leetcode</a></span> problems. <br><br>In my free time, I enjoy studying
-        the <span class="leetcode"><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html" target="_blank">CCNA</a></span> & 
-        <span class="leetcode"><a href="https://www.comptia.org/certifications/security" target="_blank">Security+</a></span> as I am planning to get both certificates before
-        I graduate.
-      </p>
+        <p class="abouttext">
+          I am currently pursuing a
+          <span class="leetcode"
+            ><a href="https://fontys.edu/" target="_blank">Fontys</a></span
+          >
+          Bachelor's degree in Cyber Security, which has been a passion of mine
+          since I was young. At the same time, I am working on developing my
+          coding skills by solving
+          <span class="leetcode"
+            ><a href="https://leetcode.com/" target="_blank">Leetcode</a></span
+          >
+          problems. <br /><br />In my free time, I enjoy studying the
+          <span class="leetcode"
+            ><a
+              href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html"
+              target="_blank"
+              >CCNA</a
+            ></span
+          >
+          &
+          <span class="leetcode"
+            ><a
+              href="https://www.comptia.org/certifications/security"
+              target="_blank"
+              >Security+</a
+            ></span
+          >
+          as I am planning to get both certificates before I graduate.
+        </p>
       </div>
     </div>
   </div>
@@ -32,9 +54,6 @@ export default {
     //   origin: 'left',
     //   distance: '200px',
     // });
-    window.sr = ScrollReveal({
-    reset: true,
-});
     sr.reveal('.abouttext', {
       duration: 1000,
       origin: 'right',
@@ -47,23 +66,23 @@ export default {
     });
     // ScrollReveal().reveal('p', { duration: 1000});
     // ScrollReveal().reveal('p', { easing: 'ease-in' });
-// ScrollReveal().reveal('h1', { easing: 'steps(5)' });
-// ScrollReveal().reveal('.checked', {
-//     distance: '0px',
-//     opacity: 0.5
-// });
-// ScrollReveal({ distance: '60px' });
-// ScrollReveal().reveal('p', { origin: 'bottom' });
-// ScrollReveal().reveal('h1', { origin: 'top' });
-// ScrollReveal().reveal('p', { scale: 0.85 });
-// ScrollReveal().reveal('p', {
-//     afterReveal: function(el) {
-//         ScrollReveal().clean(el);
-//     }
-// });
-// ScrollReveal().reveal('h1');
-// ScrollReveal().reveal('p', { desktop: false });
-// ScrollReveal().reveal('p', { viewFactor: 0.5 });
+    // ScrollReveal().reveal('h1', { easing: 'steps(5)' });
+    // ScrollReveal().reveal('.checked', {
+    //     distance: '0px',
+    //     opacity: 0.5
+    // });
+    // ScrollReveal({ distance: '60px' });
+    // ScrollReveal().reveal('p', { origin: 'bottom' });
+    // ScrollReveal().reveal('h1', { origin: 'top' });
+    // ScrollReveal().reveal('p', { scale: 0.85 });
+    // ScrollReveal().reveal('p', {
+    //     afterReveal: function(el) {
+    //         ScrollReveal().clean(el);
+    //     }
+    // });
+    // ScrollReveal().reveal('h1');
+    // ScrollReveal().reveal('p', { desktop: false });
+    // ScrollReveal().reveal('p', { viewFactor: 0.5 });
   },
 };
 </script>
@@ -78,7 +97,7 @@ h1 {
   font-weight: 800;
   overflow: hidden;
   font-size: 3rem;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 p {
   font-size: 1.5rem;
@@ -98,16 +117,16 @@ p {
   text-align: center;
   align-items: center;
 }
-.about-header span{
+.about-header span {
   width: 15%;
-  height: .1rem;
+  height: 0.1rem;
   background-color: var(--primary-color);
 }
-.about-content > p{
-width: 60%;
+.about-content > p {
+  width: 60%;
 }
-.leetcode{
-  color: #64ffda;
+.leetcode {
+  color: var(--third-color);
   font-weight: bold;
 }
 @media (max-width: 1100px) {
@@ -118,18 +137,18 @@ width: 60%;
   p {
     font-size: 1.5rem;
   }
-  .about-header{
+  .about-header {
     margin-top: 20rem;
   }
-  .about-content > p{
-width: 100%;
-}
-.about-header {
-  width: 100%;
-}
-.about-header span{
-  display: none;
-}
+  .about-content > p {
+    width: 100%;
+  }
+  .about-header {
+    width: 100%;
+  }
+  .about-header span {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   .oman {

@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class="container">
-      <h1>SECURITY ONION</h1>
+      <h1>/ SECURITY ONION</h1>
       <p class="date">Semester 5 - 2023</p>
       <div class="content">
-        <h2>> What is Security Onion?</h2>
+        <h2>What is Security Onion?</h2>
         <p>
           Security onion is an open-source platform for Network Security
           Monitoring (NSM). It gathers threat hunting tools such as Playbook,
@@ -80,7 +80,12 @@ export default {};
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    h1, h2, h3, h4, h5, h6{
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       padding: var(--header-padding);
     }
     h2 {

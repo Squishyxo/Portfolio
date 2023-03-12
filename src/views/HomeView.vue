@@ -92,6 +92,7 @@ export default {
   padding: 0.5rem;
   font-size: 1.5rem;
   font-family: var(--font2);
+  line-height: 1.5;
 }
 .muted {
   font-size: 1rem;

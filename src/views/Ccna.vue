@@ -16,7 +16,7 @@
         </p>
         <p>I will showcase my journey on completing the course.</p>
         <h3>Network Fundamentals</h3>
-        <h4>> Network Topologies</h4>
+        <h4>/ Network Topologies</h4>
         <p>
           There are many types that people used to design networks. Some of them
           are:
@@ -69,7 +69,7 @@
         </ul>
         </span>
         </p>
-        <h4>> OSI Model</h4>
+        <h4>/ OSI Model</h4>
         <p>The Open Systems Interconnection (OSI) is the model that is being used by the modern devices to communicate to other devices on the internet.<br>The OSI model consists of 7 layers that share the steps of encapsulation/decapsulation.<br><img width="70%" src="../assets/ccna2.jpg" />
     </p>
     <p>Let’s start from the top:</p>
@@ -106,7 +106,7 @@
     <strong>Layer 1 – Physical Layer:</strong>
     <p>It takes care of the physical cables and how the devices are connected and talking to each other. </p>
     </div>
-    <h4>> TCP/UDP</h4>
+    <h4>/ TCP&UDP</h4>
     <p>TCP requires 2 devices to be connected for them to send packets, therefore TCP is considered connection-based protocol.<br>The following are some of the services that the TCP protocol brings:<br>
     <ul>
         <li>The server ensure that the client received the packets, if not, the server will keep sending the same packet until it is received.</li>
@@ -122,7 +122,7 @@
         <li>Fast</li>
     </ul>
     </p>
-    <h4>> Subnetting</h4>
+    <h4>/ Subnetting</h4>
     <p>Subnetting is the strategy used to create separate networks inside one network. <br>When you have one network and 100 employees, you would not want all the employees to be in the same network. Therefore, network engineers divide that one network into many sub-networks.<br>Then, a sub network can be given to several employees that share the same job like marketing, business, and information technology. 
     </p>
     <h5>Subnet masks:</h5>
