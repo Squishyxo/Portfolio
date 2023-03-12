@@ -3,7 +3,7 @@
     <div class="container">
       <div class="skills">
         <div class="skills-header">
-        <h1>/ skills</h1>
+          <h1>/ skills</h1>
         </div>
         <section :class="{ 'white-svg': lightTheme }">
           <div>
@@ -162,13 +162,13 @@ export default {
       return this.$store.state.lightTheme;
     },
   },
-  mounted() {
-  ScrollReveal().reveal('.checked', {
-    distance: '0px',
-    opacity: 0,
-    duration: 1000
-});
-  }
+  created() {
+    ScrollReveal().reveal('.checked', {
+      distance: '0px',
+      opacity: 0,
+      duration: 1000,
+    });
+  },
 };
 </script>
 
@@ -182,7 +182,7 @@ export default {
 .softwares {
   margin-top: 6rem;
 }
-.skills{
+.skills {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -203,16 +203,12 @@ section {
   flex-wrap: wrap;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 28px;
-
 }
 section div {
   width: 20%;
   text-align: center;
   margin: 0.2rem 0;
   overflow: hidden;
-
-
-
 }
 section div > * {
   padding: 0.6rem 0;

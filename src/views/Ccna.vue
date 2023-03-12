@@ -27,7 +27,7 @@
         </ul >
         </p>
         <h5>Bus Topology</h5>
-        <p>The internet started with 2 devices that were connected using the same cable, this is called Bus Topology. It can handle more than 2 devices as long as they are connected to the same cable.<br><br> <img width="40%" src="../assets/ccna1.jpg"><br><br>This design shows that the 3 devices can talk to each other because they use the same cable.
+        <p>The internet started with 2 devices that were connected using the same cable, this is called Bus Topology. It can handle more than 2 devices as long as they are connected to the same cable.<br><br> <img width="40%" src="../assets/lan.jpg"><br><br>This design shows that the 3 devices can talk to each other because they use the same cable.
         This design is outdated and not used nowadays.
         </p>
         <h5>Ring Topology</h5>
@@ -198,6 +198,7 @@ export default {
       line-height: 2rem;
       img {
         margin: 0;
+        border-radius: 10px;
       }
     }
   }

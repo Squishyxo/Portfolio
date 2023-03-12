@@ -48,7 +48,7 @@ export default {
       return this.$store.state.lightTheme;
     },
   },
-  mounted() {
+  created() {
     // sr.reveal('.oman, h1', {
     //   duration: 1000,
     //   origin: 'left',
