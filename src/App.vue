@@ -16,7 +16,7 @@ export default {
     Footer2,
     PhoneNavigation,
   },
-  created() {
+  mounted() {
     window.sr = ScrollReveal({
       reset: true,
     });

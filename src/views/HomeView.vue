@@ -33,7 +33,6 @@
 
 <script>
 // @ is an alias to /src
-import '../views/parallax.js';
 export default {
   name: 'HomeView',
   computed: {
@@ -61,8 +60,8 @@ export default {
 }
 .container {
   width: 80%;
-  margin: 15rem auto 5rem auto;
-  height: 50vh;
+  margin: 0 auto 5rem auto;
+  height: 100vh;
 }
 .left-header h1 {
   font-size: 3rem;
@@ -73,6 +72,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
 .right-header img {
   width: 30vw;
@@ -142,8 +142,8 @@ export default {
     justify-content: center;
     margin: 3rem 0;
     img {
-      width: 90vw;
-      height: 60vh;
+      width: 55vw;
+      height: 40vh;
     }
   }
   .learn-more {
@@ -192,7 +192,8 @@ export default {
   }
   .centerimg {
     img {
-      height: 50vh;
+      width: 90vw;
+      height: 40vh;
     }
   }
 }

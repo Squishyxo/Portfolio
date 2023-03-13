@@ -162,11 +162,11 @@ export default {
       return this.$store.state.lightTheme;
     },
   },
-  created() {
-    ScrollReveal().reveal('.checked', {
-      distance: '0px',
-      opacity: 0,
-      duration: 1000,
+  mounted() {
+    ScrollReveal().reveal('.softwares', {
+      distance: 'px',
+      opacity: 0.25,
+      duration: 1500,
     });
   },
 };
@@ -175,7 +175,7 @@ export default {
 <style scoped lang="scss">
 .container {
   width: 100%;
-  margin: 10rem auto 5rem auto;
+  margin: 0 auto 5rem auto;
   font-family: var(--font2);
   padding: 1rem;
 }
