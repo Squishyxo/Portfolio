@@ -25,7 +25,7 @@ export default {
     margin-bottom: 3rem;
     padding: 0.5rem;
   }
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto 5rem auto;
   padding: 0.5rem;
   font-family: var(--font2);

@@ -180,8 +180,8 @@ export default {
 
 .cards__item {
   display: flex;
-  padding: 1rem;
-  width: 100%;
+  padding: 0.5rem;
+  width: 70%;
   display: flex;
   justify-content: center;
 
@@ -189,9 +189,12 @@ export default {
     width: 50%;
   }
   @media (min-width: 1300px) {
-    width: 33.3333%;
+    width: 27.3333%;
   }
   a {
+    width: 100%;
+  }
+  @media (max-width: 700px) {
     width: 100%;
   }
 }
