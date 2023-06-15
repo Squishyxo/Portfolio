@@ -4,8 +4,8 @@
     <div class="main">
       <HomeView />
       <About />
-      <Projects />
       <Skills />
+      <Projects />
     </div>
     <Footer2 />
   </div>

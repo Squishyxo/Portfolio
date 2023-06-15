@@ -95,22 +95,40 @@
             <span class="fa fa-star checked"></span>
           </div>
           <div>
-            <img src="../assets/react.svg" />
-            <h2>React.js</h2>
+            <img src="../assets/elasticsearch.svg" />
+            <h2>Elasticsearch</h2>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-            <span class="fa fa-star empty"></span>
-            <span class="fa fa-star empty"></span>
-            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
           </div>
           <div>
-            <img src="../assets/node.svg" />
-            <h2>Node.js</h2>
+            <img src="../assets/kibana.svg" />
+            <h2>Kibana</h2>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-            <span class="fa fa-star empty"></span>
-            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div>
+            <img src="../assets/logstash.svg" />
+            <h2>Logstash</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div>
+            <img src="../assets/SO.svg" />
+            <h2>Security Onion</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
           </div>
           <div>
             <img src="../assets/github+.svg" />
@@ -142,6 +160,42 @@
           <div>
             <img src="../assets/firebase.svg" />
             <h2>Firebase</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+          </div>
+          <div>
+            <img src="../assets/react.svg" />
+            <h2>React.js</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+          </div>
+          <div>
+            <img src="../assets/node.svg" />
+            <h2>Node.js</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+          </div>
+          <div>
+            <img src="../assets/java.svg" />
+            <h2>Java</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star empty"></span>
+          </div>
+          <div>
+            <img src="../assets/python.svg" />
+            <h2>Python</h2>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
@@ -199,10 +253,10 @@ section {
   border-radius: 15px;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
   padding: 1rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 28px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 15px;
 }
 section div {
   width: 20%;

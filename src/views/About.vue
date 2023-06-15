@@ -101,6 +101,7 @@ export default {
   font-family: var(--font4);
   height: 60vh;
   display: flex;
+  margin-top: 10rem;
 }
 h1 {
   font-weight: 800;
@@ -152,7 +153,7 @@ p {
   height: 95%;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 6px 13px 23px -5px rgb(0 0 0 / 46%);
+  box-shadow: 6px 10px 7px -5px rgb(0 0 0 / 46%);
 }
 @media (max-width: 1100px) {
   .container {

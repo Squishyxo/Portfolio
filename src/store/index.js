@@ -19,7 +19,7 @@ export default createStore({
         } else {
       document.documentElement.style.setProperty('--primary-color', '#1a1a1a');
       document.documentElement.style.setProperty('--secondary-color', '#E9EDDE');
-      document.documentElement.style.setProperty('--third-color', '#000');
+      document.documentElement.style.setProperty('--third-color', '#000080');
       document.documentElement.style.setProperty('--cards-color', '#111');
       document.documentElement.style.setProperty('--code-color', '#fff');
       document.documentElement.style.setProperty('--alerts-color', '#111');

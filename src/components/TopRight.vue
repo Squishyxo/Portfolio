@@ -4,7 +4,11 @@
       <button class="cssbuttons-io-button">
         Contact Me
         <div class="icon">
-          <img v-if="lightTheme" class="envelope" src="../assets/envelope2.svg" />
+          <img
+            v-if="lightTheme"
+            class="envelope"
+            src="../assets/envelope2.svg"
+          />
           <img v-else class="envelope" src="../assets/envelope.svg" />
         </div>
       </button>
@@ -211,8 +215,8 @@ h3 {
   --_p: 0%;
 }
 @media (max-width: 1100px) {
-.top-right{
-  display: none;
-}
+  .top-right {
+    display: none;
+  }
 }
 </style>

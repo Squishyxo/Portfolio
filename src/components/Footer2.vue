@@ -4,8 +4,8 @@
       <ul>
         <a href="/#home"><li>/home</li></a>
         <a href="/#about"><li>/about</li></a>
-        <a href="/#projects"><li>/projects</li></a>
         <a href="/#skills"><li>/skills</li></a>
+        <a href="/#projects"><li>/projects</li></a>
       </ul>
     </div>
     <div class="navIcons">
@@ -61,7 +61,6 @@ footer div ul {
   margin: 0.4rem 0;
   cursor: pointer;
   overflow: hidden;
-
 }
 .navIcons ul {
   display: flex;
@@ -92,8 +91,8 @@ footer div ul {
   opacity: 1;
 }
 @media (max-width: 1100px) {
-footer{
-  display: none;
-}
+  footer {
+    display: none;
+  }
 }
 </style>
