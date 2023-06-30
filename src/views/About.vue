@@ -1,49 +1,45 @@
 <template>
-  <div id="about">
-    <div class="container">
-      <div class="left">
-        <div class="about-header">
-          <h1>/ About me</h1>
-          <span></span>
-        </div>
-        <div class="about-content">
-          <p>
-            I am currently pursuing a
-            <span class="leetcode"
-              ><a href="https://fontys.edu/" target="_blank">Fontys</a></span
-            >
-            Bachelor's degree in Cyber Security, which has been a passion of
-            mine since I was young. At the same time, I am working on developing
-            my coding skills by solving
-            <span class="leetcode"
-              ><a href="https://leetcode.com/" target="_blank"
-                >Leetcode</a
-              ></span
-            >
-            problems. <br /><br />In my free time, I enjoy studying the
-            <span class="leetcode"
-              ><a
-                href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html"
-                target="_blank"
-                >CCNA</a
-              ></span
-            >
-            &
-            <span class="leetcode"
-              ><a
-                href="https://www.comptia.org/certifications/security"
-                target="_blank"
-                >Security+</a
-              ></span
-            >
-            as I am planning to get both certificates before I graduate.
-          </p>
-        </div>
+  <div class="container" id="about">
+    <div class="left">
+      <div class="about-header">
+        <h1>/ About me</h1>
+        <span></span>
       </div>
-      <div class="right">
-        <img class="pic" src="../assets/++.jpg" />
+      <div class="about-content">
+        <p>
+          I am currently pursuing a
+          <span class="leetcode"
+            ><a href="https://fontys.edu/" target="_blank">Fontys</a></span
+          >
+          Bachelor's degree in Cyber Security, which has been a passion of mine
+          since I was young. At the same time, I am working on developing my
+          coding skills by solving
+          <span class="leetcode"
+            ><a href="https://leetcode.com/" target="_blank">Leetcode</a></span
+          >
+          problems. <br /><br />In my free time, I enjoy studying the
+          <span class="leetcode"
+            ><a
+              href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html"
+              target="_blank"
+              >CCNA</a
+            ></span
+          >
+          &
+          <span class="leetcode"
+            ><a
+              href="https://www.comptia.org/certifications/security"
+              target="_blank"
+              >Security+</a
+            ></span
+          >
+          as I am planning to get both certificates before I graduate.
+        </p>
       </div>
     </div>
+    <!-- <div class="right">
+        <img class="pic" src="../assets/++.jpg" />
+      </div> -->
   </div>
 </template>
 
@@ -139,7 +135,7 @@ p {
   font-weight: bold;
 }
 .left {
-  width: 50%;
+  width: 70%;
 }
 .right {
   width: 50%;

@@ -1,32 +1,28 @@
 <template>
   <div class="container" id="home">
-    <div class="header">
-      <div class="left-header" :class="{ 'white-svg': lightTheme }">
-        <h1>Hi, I'm Mohammed</h1>
-        <div class="location">
-          <img src="../assets/location.svg" />
-          <p>Oman - The Netherlands</p>
-        </div>
-        <p class="intro">
-          I do networking, monitoring, programming & a bit of designing.
-        </p>
-        <a href="#about">
-          <div>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">More about me</span>
-            </button>
-            <button class="small">More about me ></button>
-          </div>
-        </a>
+    <div class="left-header" :class="{ 'white-svg': lightTheme }">
+      <h1>Hi, I'm Mohammed</h1>
+      <div class="location">
+        <img src="../assets/location.svg" />
+        <p>Oman - The Netherlands</p>
       </div>
-      <div class="centerimg">
-        <div class="right-header">
-          <img src="../assets/home.jpg" />
+      <p class="intro">
+        I do networking, monitoring, programming & a bit of designing.
+      </p>
+      <a href="#about">
+        <div>
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">More about me</span>
+          </button>
+          <button class="small">More about me ></button>
         </div>
-      </div>
+      </a>
+    </div>
+    <div class="right-header">
+      <img src="../assets/++.jpg" />
     </div>
   </div>
 </template>
@@ -59,41 +55,57 @@ export default {
   overflow-x: visible !important;
 }
 .container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto 5rem auto;
   height: 100vh;
-}
-.left-header h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  font-family: var(--font1);
-}
-.header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 100%;
 }
-.right-header img {
-  width: 30vw;
-  height: 40vh;
-  object-fit: cover;
-  border-radius: 10px;
-}
-.left-header > * {
-  padding: 0.5rem;
+.left-header {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0 0 10rem;
   font-size: 1.5rem;
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: var(--font1);
+  }
+  div img {
+    width: 1.5rem;
+  }
+  .intro {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-family: var(--font2);
+    line-height: 1.5;
+  }
+  a div {
+    padding-top: 1.5rem;
+  }
+}
+.right-header {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  img {
+    width: 60%;
+    height: 55%;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 6px 10px 7px -5px rgb(0 0 0 / 46%);
+  }
 }
 .small {
   display: none;
 }
 
-.intro {
-  padding: 0.5rem;
-  font-size: 1.5rem;
-  font-family: var(--font2);
-  line-height: 1.5;
-}
 .muted {
   font-size: 1rem;
   font-family: var(--font3);

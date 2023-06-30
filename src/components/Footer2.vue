@@ -2,10 +2,30 @@
   <footer>
     <div class="navigation">
       <ul>
-        <a href="/#home"><li>/home</li></a>
-        <a href="/#about"><li>/about</li></a>
-        <a href="/#skills"><li>/skills</li></a>
-        <a href="/#projects"><li>/projects</li></a>
+        <a href="/#home">
+          <li>
+            <img v-if="!lightTheme" src="../assets/home2.svg" />
+            <img v-else src="../assets/home.svg" />
+          </li>
+        </a>
+        <a href="/#about">
+          <li>
+            <img v-if="!lightTheme" src="../assets/about2.svg" />
+            <img v-else src="../assets/about.svg" />
+          </li>
+        </a>
+        <a href="/#skills">
+          <li>
+            <img v-if="!lightTheme" src="../assets/skills2.svg" />
+            <img v-else src="../assets/skills.svg" />
+          </li>
+        </a>
+        <a href="/#projects">
+          <li>
+            <img v-if="!lightTheme" src="../assets/projects2.svg" />
+            <img v-else src="../assets/projects.svg" />
+          </li>
+        </a>
       </ul>
     </div>
     <div class="navIcons">
@@ -45,19 +65,30 @@ export default {
 footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   right: 3%;
   bottom: 3%;
   font-family: var(--font4);
+  height: 60vh;
 }
 footer > * {
-  margin: 1rem 0;
   font-size: 1rem;
 }
 footer div ul {
   list-style: none;
 }
-.navigation ul li {
+.navigation {
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  height: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.navigation ul li img {
   margin: 0.4rem 0;
   cursor: pointer;
   overflow: hidden;
@@ -75,7 +106,7 @@ footer div ul {
   justify-content: start;
 }
 .icons a {
-  margin: 0 0.8rem 0 0;
+  margin: 0 0.4rem;
 }
 .icons a img {
   width: 1.2rem;
@@ -89,6 +120,9 @@ footer div ul {
 
 .icons a:hover {
   opacity: 1;
+}
+img {
+  width: 1.5rem;
 }
 @media (max-width: 1100px) {
   footer {
