@@ -39,7 +39,7 @@
         <li style="--accent-color: #1b5f8c">
           <div class="date">
             Monitoring<br />
-            & analyzing traffic
+            & analyzing traffic.
           </div>
           <div class="title">> Securoty Onion, OSSEC, ZEEK</div>
           <div>
