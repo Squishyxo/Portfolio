@@ -56,7 +56,7 @@
         </section>
       </div>
       <div class="softwares">
-        <h1>SOFTWARES</h1>
+        <h1>SOFTWARE</h1>
         <section :class="{ 'white-svg': lightTheme }">
           <div>
             <img src="../assets/html.svg" />
