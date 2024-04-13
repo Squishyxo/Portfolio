@@ -149,6 +149,9 @@ export default {
       }
     }
   }
+  .right-header {
+    display: none;
+  }
   .centerimg {
     display: flex;
     justify-content: center;

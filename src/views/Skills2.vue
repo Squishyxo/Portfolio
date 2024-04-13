@@ -9,25 +9,25 @@
           <div>
             <img src="../assets/frontend.svg" />
             <h2>Frontend</h2>
-            <p>Creating responsive websites.</p>
+            <p>Designing intuitive and dynamic user interfaces.</p>
           </div>
           <span class="line"></span>
           <div>
             <img src="../assets/backend.svg" />
             <h2>Backend</h2>
-            <p>Building APIs for websites.</p>
+            <p>Building scalable and secure server-side applications.</p>
           </div>
           <span class="line"></span>
           <div>
             <img src="../assets/cybersecurity.svg" />
             <h2>Cyber Security</h2>
-            <p>Securing infrastructure from attackers.</p>
+            <p>Securing digital assets with robust protocols.</p>
           </div>
           <span class="line"></span>
           <div>
             <img src="../assets/monitoring.svg" />
             <h2>Monitoring</h2>
-            <p>Building SIEM solutions to manage the monitoring.</p>
+            <p>Enhancing network defenses with SIEM solutions.</p>
           </div>
           <span class="line"></span>
           <div>
@@ -39,19 +39,19 @@
           <div>
             <img src="../assets/editing.svg" />
             <h2>Video Editing</h2>
-            <p>Shooting & Editing Videos For Production.</p>
+            <p>Creating engaging video content with seamless edits.</p>
           </div>
           <span class="line"></span>
           <div>
             <img src="../assets/github+.svg" />
             <h2>Git</h2>
-            <p>Working with git to share the work with other students.</p>
+            <p>Collaborating on code with version control.</p>
           </div>
           <span class="line"></span>
           <div>
             <img src="../assets/docker.svg" />
             <h2>Docker</h2>
-            <p>Dockerizing applications into small containers.</p>
+            <p>Streamlining application deployment with containerization.</p>
           </div>
         </section>
       </div>
@@ -199,7 +199,7 @@
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
-            <span class="fa fa-star empty"></span>
+            <span class="fa fa-star checked"></span>
             <span class="fa fa-star empty"></span>
           </div>
         </section>
